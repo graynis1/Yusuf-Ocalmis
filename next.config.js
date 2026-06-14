@@ -2,6 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    // Vercel optimizer Wikimedia'ya UA göndermeden çekince 400 alıyor; tarayıcı doğrudan yüklesin.
+    unoptimized: true,
     remotePatterns: [
       { protocol: "https", hostname: "**" },
       { protocol: "http", hostname: "**" },
