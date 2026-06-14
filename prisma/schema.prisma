@@ -130,6 +130,8 @@ model Product {
   imageUrl    String?
   images      Json?
   attributes  Json?
+  rating      Float?
+  reviewCount Int            @default(0)
   lowestPrice Decimal?       @db.Decimal(12, 2)
   offerCount  Int            @default(0)
   offers      Offer[]

@@ -44,6 +44,19 @@ export default async function CategoryPage({
     ancestors = [{ name: category.name, slug: category.slug }];
   }
 
+  // alt kategoriler (ürünü olanlar)
+  let subcategories: { name: string; slug: string }[] = [];
+  try {
+    const kids = await prisma.category.findMany({
+      where: { parentId: category.id },
+      orderBy: { order: "asc" },
+      select: { name: true, slug: true, _count: { select: { products: true } }, children: { select: { id: true } } },
+    });
+    subcategories = kids.map((k) => ({ name: k.name, slug: k.slug }));
+  } catch {
+    subcategories = [];
+  }
+
   const searchP = parseSearchParams(searchParams, { categorySlug: slug });
   let result;
   try {
@@ -74,7 +87,21 @@ export default async function CategoryPage({
         ))}
       </nav>
 
-      <h1 className="mb-6 font-display text-2xl font-bold">{category.name}</h1>
+      <h1 className="mb-4 font-display text-2xl font-bold">{category.name}</h1>
+
+      {subcategories.length > 0 && (
+        <div className="mb-6 flex flex-wrap gap-2">
+          {subcategories.map((s) => (
+            <Link
+              key={s.slug}
+              href={`/kategori/${s.slug}`}
+              className="rounded-full border border-[var(--border)] bg-white px-4 py-1.5 text-sm font-medium text-ink transition-colors hover:border-[var(--brand)] hover:text-[var(--brand)]"
+            >
+              {s.name}
+            </Link>
+          ))}
+        </div>
+      )}
 
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-[260px_1fr]">
         <div className="lg:sticky lg:top-20 lg:self-start">

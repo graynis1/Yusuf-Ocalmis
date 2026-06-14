@@ -25,6 +25,8 @@ export interface SearchProductRow {
   lowestPrice: number | null;
   offerCount: number;
   isSponsored: boolean;
+  rating: number | null;
+  reviewCount: number;
 }
 
 export interface Facets {
@@ -118,7 +120,7 @@ export async function searchProducts(params: SearchParams): Promise<SearchResult
     SELECT p.id, p.slug, p.title, p."imageUrl",
            b.name AS "brandName",
            p."lowestPrice"::float8 AS "lowestPrice",
-           p."offerCount",
+           p."offerCount", p.rating, p."reviewCount",
            EXISTS(SELECT 1 FROM "Offer" o WHERE o."productId" = p.id AND o."isSponsored") AS "isSponsored"
     FROM "Product" p
     LEFT JOIN "Brand" b ON b.id = p."brandId"

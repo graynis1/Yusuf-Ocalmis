@@ -87,8 +87,10 @@ export async function matchOffer(input: MatchInput, deps: MatchDeps): Promise<Ma
     brandMpnProductId = await deps.findByBrandMpn(input.brandId, mpn);
   }
 
+  // GTIN otoriterdir: geçerli GTIN'i olup eşleşme bulunamayan teklif AYRI bir üründür.
+  // Fuzzy yalnızca GTIN'siz (veya MPN'siz) tekliflerde devreye girer; aksi halde yanlış birleşme olur.
   let fuzzy: FuzzyCandidate[] = [];
-  if (!gtinProductId && !brandMpnProductId) {
+  if (!gtinProductId && !brandMpnProductId && !gtin) {
     fuzzy = await deps.fuzzyCandidates({
       categoryId: input.categoryId,
       brandId: input.brandId,

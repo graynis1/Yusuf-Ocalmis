@@ -11,8 +11,47 @@ import path from "node:path";
 import { PrismaClient, Prisma } from "@prisma/client";
 import bcrypt from "bcryptjs";
 import { runFeed } from "../src/feeds/runner";
+import { CATALOG, catalogGtin } from "../data/catalog";
 
 const prisma = new PrismaClient();
+
+/** Eski/önceki seed verisini temizle (idempotent yeniden seed). */
+async function cleanup() {
+  await prisma.click.deleteMany();
+  await prisma.priceHistory.deleteMany();
+  await prisma.matchReview.deleteMany();
+  await prisma.priceAlert.deleteMany();
+  await prisma.favorite.deleteMany();
+  await prisma.offer.deleteMany();
+  await prisma.product.deleteMany();
+  await prisma.ingestionRun.deleteMany();
+  await prisma.feedSource.deleteMany();
+}
+
+/** Ingest sonrası: katalogdan gerçek teknik özellikleri + puan/yorumu ürünlere ata (GTIN eşleşmesi). */
+async function assignCatalogData() {
+  let updated = 0;
+  for (let i = 0; i < CATALOG.length; i++) {
+    const item = CATALOG[i];
+    const gtin = catalogGtin(i);
+    const product = await prisma.product.findUnique({ where: { gtin }, select: { id: true } });
+    if (!product) continue;
+    // gerçekçi puan: 3.8–4.9, yorum: 12–2400
+    const rating = Math.round((3.8 + Math.random() * 1.1) * 10) / 10;
+    const reviewCount = Math.floor(12 + Math.random() * 2400);
+    await prisma.product.update({
+      where: { id: product.id },
+      data: {
+        attributes: item.specs as object,
+        rating,
+        reviewCount,
+        description: `${item.brand} ${item.model} — ${item.categoryName} kategorisinde öne çıkan model. Tüm satıcıların güncel fiyatlarını karşılaştır, en uygununu seç.`,
+      },
+    });
+    updated++;
+  }
+  console.log(`  ✓ ${updated} ürüne gerçek özellik + puan atandı`);
+}
 
 function slugify(input: string): string {
   const map: Record<string, string> = {
@@ -29,16 +68,16 @@ const TAXONOMY: Node[] = [
   { name: "Elektronik", children: [
     { name: "Telefon", children: [{ name: "Akıllı Telefon" }] },
     { name: "Bilgisayar", children: [{ name: "Dizüstü" }] },
-    { name: "TV & Ses", children: [{ name: "Televizyon" }] },
+    { name: "TV & Ses", children: [{ name: "Televizyon" }, { name: "Kulaklık" }] },
+    { name: "Giyilebilir", children: [{ name: "Akıllı Saat" }] },
+    { name: "Oyun", children: [{ name: "Oyun Konsolu" }] },
   ]},
   { name: "Ev & Yaşam", children: [
     { name: "Beyaz Eşya" },
     { name: "Küçük Ev Aletleri" },
   ]},
   { name: "Kozmetik & Kişisel Bakım", children: [{ name: "Parfüm" }] },
-  { name: "Anne & Bebek", children: [{ name: "Oyuncak" }] },
-  { name: "Moda", children: [{ name: "Giyim" }] },
-  { name: "Spor & Outdoor", children: [{ name: "Fitness" }] },
+  { name: "Moda", children: [{ name: "Ayakkabı" }] },
 ];
 
 async function seedCategories(nodes: Node[], parentId: string | null, parentPath: string, order = 0) {
@@ -212,6 +251,8 @@ async function seedUsers() {
 
 async function main() {
   console.log("🌱 FİYATBUL seed başlıyor…");
+  console.log("• Eski veriyi temizleme");
+  await cleanup();
   console.log("• Kategoriler");
   await seedCategories(TAXONOMY, null, "");
   console.log("• Markalar"); await seedBrands();
@@ -219,6 +260,7 @@ async function main() {
   const merchants = await seedSystemMerchants();
   console.log(`• Feed ingestion (${merchants.length} feed) — bu birkaç dakika sürebilir…`);
   await ingestAll(merchants.map((m) => m.feedId));
+  console.log("• Gerçek özellik + puan atama"); await assignCatalogData();
   console.log("• Fiyat geçmişi"); await backfillHistory();
   console.log("• Kullanıcılar"); await seedUsers();
 

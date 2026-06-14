@@ -5,2752 +5,784 @@
   <link>https://example-store.com</link>
   <description>Demo feed — FİYATBUL</description>
   <item>
-    <g:id>9690000015838</g:id>
-    <title>Samsung iPhone 15 Pro Max 256GB</title>
-    <link>https://example-store.com/p/9690000015838</link>
-    <g:price>47455 TRY</g:price>
-    <g:sale_price>47455 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000015838/500/500</g:image_link>
-    <g:brand>Samsung</g:brand>
-    <g:gtin>9690000015838</g:gtin>
-    <g:mpn>SAM-1002</g:mpn>
+    <g:id>8690000000138</g:id>
+    <title>Apple iPhone 15 Pro 128GB</title>
+    <link>https://example-store.com/p/8690000000138</link>
+    <g:price>64280 TRY</g:price>
+
+    <g:image_link>https://loremflickr.com/600/600/iphone?lock=1</g:image_link>
+    <g:brand>Apple</g:brand>
+    <g:gtin>8690000000138</g:gtin>
+    <g:mpn>APP-1001</g:mpn>
     <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
-    <g:color>Titanyum</g:color>
+    <g:availability>out of stock</g:availability>
   </item>
   <item>
-    <g:id>9690000039595</g:id>
-    <title>Realme iPhone 15 Pro Max 256GB</title>
-    <link>https://example-store.com/p/9690000039595</link>
-    <g:price>30315 TRY</g:price>
-    <g:sale_price>30315 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000039595/500/500</g:image_link>
-    <g:brand>Realme</g:brand>
-    <g:gtin>9690000039595</g:gtin>
-    <g:mpn>REA-1005</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
-    <g:color>Titanyum</g:color>
-  </item>
-  <item>
-    <g:id>9690000055433</g:id>
+    <g:id>8690000000275</g:id>
     <title>Apple iPhone 15 128GB</title>
-    <link>https://example-store.com/p/9690000055433</link>
-    <g:price>26872 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000055433/500/500</g:image_link>
+    <link>https://example-store.com/p/8690000000275</link>
+    <g:price>50590 TRY</g:price>
+    <g:sale_price>42840 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/iphone?lock=2</g:image_link>
     <g:brand>Apple</g:brand>
-    <g:gtin>9690000055433</g:gtin>
-    <g:mpn>APP-1007</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>out of stock</g:availability>
-    <g:size>128GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000063352</g:id>
-    <title>Samsung iPhone 15 128GB</title>
-    <link>https://example-store.com/p/9690000063352</link>
-    <g:price>15659 TRY</g:price>
-    <g:sale_price>15659 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000063352/500/500</g:image_link>
-    <g:brand>Samsung</g:brand>
-    <g:gtin>9690000063352</g:gtin>
-    <g:mpn>SAM-1008</g:mpn>
+    <g:gtin>8690000000275</g:gtin>
+    <g:mpn>APP-1002</g:mpn>
     <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
     <g:availability>in stock</g:availability>
-    <g:size>128GB</g:size>
   </item>
   <item>
-    <g:id>9690000102947</g:id>
-    <title>Apple iPhone 14 128GB</title>
-    <link>https://example-store.com/p/9690000102947</link>
-    <g:price>74064 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000102947/500/500</g:image_link>
-    <g:brand>Apple</g:brand>
-    <g:gtin>9690000102947</g:gtin>
-    <g:mpn>APP-1013</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>128GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000150461</g:id>
-    <title>Apple Galaxy S24 Ultra 512GB</title>
-    <link>https://example-store.com/p/9690000150461</link>
-    <g:price>36782 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000150461/500/500</g:image_link>
-    <g:brand>Apple</g:brand>
-    <g:gtin>9690000150461</g:gtin>
-    <g:mpn>APP-1019</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>512GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000158380</g:id>
+    <g:id>8690000000549</g:id>
     <title>Samsung Galaxy S24 Ultra 512GB</title>
-    <link>https://example-store.com/p/9690000158380</link>
-    <g:price>73368 TRY</g:price>
-    <g:sale_price>73368 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000158380/500/500</g:image_link>
+    <link>https://example-store.com/p/8690000000549</link>
+    <g:price>71790 TRY</g:price>
+    <g:sale_price>62090 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/samsung%20galaxy?lock=4</g:image_link>
     <g:brand>Samsung</g:brand>
-    <g:gtin>9690000158380</g:gtin>
-    <g:mpn>SAM-1020</g:mpn>
+    <g:gtin>8690000000549</g:gtin>
+    <g:mpn>SAM-1004</g:mpn>
     <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
     <g:availability>in stock</g:availability>
-    <g:size>512GB</g:size>
   </item>
   <item>
-    <g:id>9690000197975</g:id>
-    <title>Apple Galaxy S24 256GB</title>
-    <link>https://example-store.com/p/9690000197975</link>
-    <g:price>68666 TRY</g:price>
+    <g:id>8690000000823</g:id>
+    <title>Samsung Galaxy A55 256GB</title>
+    <link>https://example-store.com/p/8690000000823</link>
+    <g:price>23430 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690000197975/500/500</g:image_link>
-    <g:brand>Apple</g:brand>
-    <g:gtin>9690000197975</g:gtin>
-    <g:mpn>APP-1025</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000221732</g:id>
-    <title>Oppo Galaxy S24 256GB</title>
-    <link>https://example-store.com/p/9690000221732</link>
-    <g:price>18308 TRY</g:price>
-    <g:sale_price>18308 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000221732/500/500</g:image_link>
-    <g:brand>Oppo</g:brand>
-    <g:gtin>9690000221732</g:gtin>
-    <g:mpn>OPP-1028</g:mpn>
+    <g:image_link>https://loremflickr.com/600/600/samsung%20galaxy?lock=6</g:image_link>
+    <g:brand>Samsung</g:brand>
+    <g:gtin>8690000000823</g:gtin>
+    <g:mpn>SAM-1006</g:mpn>
     <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
     <g:availability>out of stock</g:availability>
-    <g:size>256GB</g:size>
   </item>
   <item>
-    <g:id>9690000237570</g:id>
-    <title>Huawei Galaxy S24 256GB</title>
-    <link>https://example-store.com/p/9690000237570</link>
-    <g:price>64782 TRY</g:price>
+    <g:id>8690000001097</g:id>
+    <title>Xiaomi 14 256GB</title>
+    <link>https://example-store.com/p/8690000001097</link>
+    <g:price>37830 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690000237570/500/500</g:image_link>
-    <g:brand>Huawei</g:brand>
-    <g:gtin>9690000237570</g:gtin>
-    <g:mpn>HUA-1030</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000269246</g:id>
-    <title>Oppo Galaxy A55 128GB</title>
-    <link>https://example-store.com/p/9690000269246</link>
-    <g:price>62233 TRY</g:price>
-    <g:sale_price>62233 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000269246/500/500</g:image_link>
-    <g:brand>Oppo</g:brand>
-    <g:gtin>9690000269246</g:gtin>
-    <g:mpn>OPP-1034</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>128GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000293003</g:id>
-    <title>Apple Redmi Note 13 Pro 256GB</title>
-    <link>https://example-store.com/p/9690000293003</link>
-    <g:price>79631 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000293003/500/500</g:image_link>
-    <g:brand>Apple</g:brand>
-    <g:gtin>9690000293003</g:gtin>
-    <g:mpn>APP-1037</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000324679</g:id>
-    <title>Realme Redmi Note 13 Pro 256GB</title>
-    <link>https://example-store.com/p/9690000324679</link>
-    <g:price>66968 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000324679/500/500</g:image_link>
-    <g:brand>Realme</g:brand>
-    <g:gtin>9690000324679</g:gtin>
-    <g:mpn>REA-1041</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000332598</g:id>
-    <title>Huawei Redmi Note 13 Pro 256GB</title>
-    <link>https://example-store.com/p/9690000332598</link>
-    <g:price>18295 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000332598/500/500</g:image_link>
-    <g:brand>Huawei</g:brand>
-    <g:gtin>9690000332598</g:gtin>
-    <g:mpn>HUA-1042</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000340517</g:id>
-    <title>Apple Xiaomi 14 256GB</title>
-    <link>https://example-store.com/p/9690000340517</link>
-    <g:price>9391 TRY</g:price>
-    <g:sale_price>9391 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000340517/500/500</g:image_link>
-    <g:brand>Apple</g:brand>
-    <g:gtin>9690000340517</g:gtin>
-    <g:mpn>APP-1043</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000372193</g:id>
-    <title>Realme Xiaomi 14 256GB</title>
-    <link>https://example-store.com/p/9690000372193</link>
-    <g:price>32621 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000372193/500/500</g:image_link>
-    <g:brand>Realme</g:brand>
-    <g:gtin>9690000372193</g:gtin>
-    <g:mpn>REA-1047</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000388031</g:id>
-    <title>Apple Reno 11 256GB</title>
-    <link>https://example-store.com/p/9690000388031</link>
-    <g:price>22821 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000388031/500/500</g:image_link>
-    <g:brand>Apple</g:brand>
-    <g:gtin>9690000388031</g:gtin>
-    <g:mpn>APP-1049</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000403869</g:id>
-    <title>Xiaomi Reno 11 256GB</title>
-    <link>https://example-store.com/p/9690000403869</link>
-    <g:price>12772 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000403869/500/500</g:image_link>
+    <g:image_link>https://loremflickr.com/600/600/xiaomi%20phone?lock=8</g:image_link>
     <g:brand>Xiaomi</g:brand>
-    <g:gtin>9690000403869</g:gtin>
-    <g:mpn>XIA-1051</g:mpn>
+    <g:gtin>8690000001097</g:gtin>
+    <g:mpn>XIA-1008</g:mpn>
     <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
+    <g:availability>out of stock</g:availability>
   </item>
   <item>
-    <g:id>9690000411788</g:id>
+    <g:id>8690000001371</g:id>
     <title>Oppo Reno 11 256GB</title>
-    <link>https://example-store.com/p/9690000411788</link>
-    <g:price>18075 TRY</g:price>
-    <g:sale_price>18075 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000411788/500/500</g:image_link>
+    <link>https://example-store.com/p/8690000001371</link>
+    <g:price>17500 TRY</g:price>
+
+    <g:image_link>https://loremflickr.com/600/600/smartphone?lock=10</g:image_link>
     <g:brand>Oppo</g:brand>
-    <g:gtin>9690000411788</g:gtin>
-    <g:mpn>OPP-1052</g:mpn>
+    <g:gtin>8690000001371</g:gtin>
+    <g:mpn>OPP-1010</g:mpn>
     <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
     <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
   </item>
   <item>
-    <g:id>9690000443464</g:id>
-    <title>Samsung Realme 12 Pro 256GB</title>
-    <link>https://example-store.com/p/9690000443464</link>
-    <g:price>9912 TRY</g:price>
+    <g:id>8690000001508</g:id>
+    <title>Realme 12 Pro Plus 512GB</title>
+    <link>https://example-store.com/p/8690000001508</link>
+    <g:price>22940 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690000443464/500/500</g:image_link>
-    <g:brand>Samsung</g:brand>
-    <g:gtin>9690000443464</g:gtin>
-    <g:mpn>SAM-1056</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000459302</g:id>
-    <title>Oppo Realme 12 Pro 256GB</title>
-    <link>https://example-store.com/p/9690000459302</link>
-    <g:price>42829 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000459302/500/500</g:image_link>
-    <g:brand>Oppo</g:brand>
-    <g:gtin>9690000459302</g:gtin>
-    <g:mpn>OPP-1058</g:mpn>
-    <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
-  </item>
-  <item>
-    <g:id>9690000467221</g:id>
-    <title>Realme Realme 12 Pro 256GB</title>
-    <link>https://example-store.com/p/9690000467221</link>
-    <g:price>54993 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000467221/500/500</g:image_link>
+    <g:image_link>https://loremflickr.com/600/600/smartphone?lock=11</g:image_link>
     <g:brand>Realme</g:brand>
-    <g:gtin>9690000467221</g:gtin>
-    <g:mpn>REA-1059</g:mpn>
+    <g:gtin>8690000001508</g:gtin>
+    <g:mpn>REA-1011</g:mpn>
     <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
-    <g:availability>out of stock</g:availability>
-    <g:size>256GB</g:size>
+    <g:availability>in stock</g:availability>
   </item>
   <item>
-    <g:id>9690000475140</g:id>
-    <title>Huawei Realme 12 Pro 256GB</title>
-    <link>https://example-store.com/p/9690000475140</link>
-    <g:price>17368 TRY</g:price>
+    <g:id>8690000001645</g:id>
+    <title>Huawei Nova 12i 128GB</title>
+    <link>https://example-store.com/p/8690000001645</link>
+    <g:price>12740 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690000475140/500/500</g:image_link>
+    <g:image_link>https://loremflickr.com/600/600/smartphone?lock=12</g:image_link>
     <g:brand>Huawei</g:brand>
-    <g:gtin>9690000475140</g:gtin>
-    <g:mpn>HUA-1060</g:mpn>
+    <g:gtin>8690000001645</g:gtin>
+    <g:mpn>HUA-1012</g:mpn>
     <g:product_type>Elektronik &gt; Telefon &gt; Akıllı Telefon</g:product_type>
     <g:availability>in stock</g:availability>
-    <g:size>256GB</g:size>
   </item>
   <item>
-    <g:id>9690000483059</g:id>
+    <g:id>8690000001782</g:id>
     <title>Apple MacBook Air M3 13 inç 256GB</title>
-    <link>https://example-store.com/p/9690000483059</link>
-    <g:price>60864 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000483059/500/500</g:image_link>
+    <link>https://example-store.com/p/8690000001782</link>
+    <g:price>58590 TRY</g:price>
+    <g:sale_price>52100 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/macbook?lock=13</g:image_link>
     <g:brand>Apple</g:brand>
-    <g:gtin>9690000483059</g:gtin>
-    <g:mpn>APP-1061</g:mpn>
+    <g:gtin>8690000001782</g:gtin>
+    <g:mpn>APP-1013</g:mpn>
     <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690000490978</g:id>
-    <title>Asus MacBook Air M3 13 inç 256GB</title>
-    <link>https://example-store.com/p/9690000490978</link>
-    <g:price>105361 TRY</g:price>
-    <g:sale_price>105361 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000490978/500/500</g:image_link>
-    <g:brand>Asus</g:brand>
-    <g:gtin>9690000490978</g:gtin>
-    <g:mpn>ASU-1062</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000498897</g:id>
-    <title>Lenovo MacBook Air M3 13 inç 256GB</title>
-    <link>https://example-store.com/p/9690000498897</link>
-    <g:price>47201 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000498897/500/500</g:image_link>
-    <g:brand>Lenovo</g:brand>
-    <g:gtin>9690000498897</g:gtin>
-    <g:mpn>LEN-1063</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000530573</g:id>
+    <g:id>8690000001919</g:id>
     <title>Apple MacBook Pro 14 inç M3 512GB</title>
-    <link>https://example-store.com/p/9690000530573</link>
-    <g:price>126054 TRY</g:price>
+    <link>https://example-store.com/p/8690000001919</link>
+    <g:price>86120 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690000530573/500/500</g:image_link>
+    <g:image_link>https://loremflickr.com/600/600/macbook?lock=14</g:image_link>
     <g:brand>Apple</g:brand>
-    <g:gtin>9690000530573</g:gtin>
-    <g:mpn>APP-1067</g:mpn>
+    <g:gtin>8690000001919</g:gtin>
+    <g:mpn>APP-1014</g:mpn>
     <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690000554330</g:id>
-    <title>HP MacBook Pro 14 inç M3 512GB</title>
-    <link>https://example-store.com/p/9690000554330</link>
-    <g:price>27851 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000554330/500/500</g:image_link>
-    <g:brand>HP</g:brand>
-    <g:gtin>9690000554330</g:gtin>
-    <g:mpn>HP-1070</g:mpn>
+    <g:id>8690000002193</g:id>
+    <title>Asus Vivobook 15 i5 16GB</title>
+    <link>https://example-store.com/p/8690000002193</link>
+    <g:price>22880 TRY</g:price>
+    <g:sale_price>20120 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/laptop?lock=16</g:image_link>
+    <g:brand>Asus</g:brand>
+    <g:gtin>8690000002193</g:gtin>
+    <g:mpn>ASU-1016</g:mpn>
     <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690000562249</g:id>
-    <title>Monster MacBook Pro 14 inç M3 512GB</title>
-    <link>https://example-store.com/p/9690000562249</link>
-    <g:price>19704 TRY</g:price>
-    <g:sale_price>19704 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000562249/500/500</g:image_link>
-    <g:brand>Monster</g:brand>
-    <g:gtin>9690000562249</g:gtin>
-    <g:mpn>MON-1071</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000570168</g:id>
-    <title>Casper MacBook Pro 14 inç M3 512GB</title>
-    <link>https://example-store.com/p/9690000570168</link>
-    <g:price>14409 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000570168/500/500</g:image_link>
-    <g:brand>Casper</g:brand>
-    <g:gtin>9690000570168</g:gtin>
-    <g:mpn>CAS-1072</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000578087</g:id>
-    <title>Apple ROG Strix G16 RTX 4060</title>
-    <link>https://example-store.com/p/9690000578087</link>
-    <g:price>46539 TRY</g:price>
-    <g:sale_price>46539 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000578087/500/500</g:image_link>
-    <g:brand>Apple</g:brand>
-    <g:gtin>9690000578087</g:gtin>
-    <g:mpn>APP-1073</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000601844</g:id>
-    <title>HP ROG Strix G16 RTX 4060</title>
-    <link>https://example-store.com/p/9690000601844</link>
-    <g:price>61357 TRY</g:price>
-    <g:sale_price>61357 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000601844/500/500</g:image_link>
-    <g:brand>HP</g:brand>
-    <g:gtin>9690000601844</g:gtin>
-    <g:mpn>HP-1076</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000609763</g:id>
-    <title>Monster ROG Strix G16 RTX 4060</title>
-    <link>https://example-store.com/p/9690000609763</link>
-    <g:price>54777 TRY</g:price>
-    <g:sale_price>54777 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000609763/500/500</g:image_link>
-    <g:brand>Monster</g:brand>
-    <g:gtin>9690000609763</g:gtin>
-    <g:mpn>MON-1077</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000625601</g:id>
-    <title>Apple Vivobook 15 i5 16GB</title>
-    <link>https://example-store.com/p/9690000625601</link>
-    <g:price>31486 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000625601/500/500</g:image_link>
-    <g:brand>Apple</g:brand>
-    <g:gtin>9690000625601</g:gtin>
-    <g:mpn>APP-1079</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000657277</g:id>
-    <title>Monster Vivobook 15 i5 16GB</title>
-    <link>https://example-store.com/p/9690000657277</link>
-    <g:price>89110 TRY</g:price>
-    <g:sale_price>89110 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000657277/500/500</g:image_link>
-    <g:brand>Monster</g:brand>
-    <g:gtin>9690000657277</g:gtin>
-    <g:mpn>MON-1083</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>out of stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000673115</g:id>
-    <title>Apple ThinkPad E14 Ryzen 5</title>
-    <link>https://example-store.com/p/9690000673115</link>
-    <g:price>67992 TRY</g:price>
-    <g:sale_price>67992 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000673115/500/500</g:image_link>
-    <g:brand>Apple</g:brand>
-    <g:gtin>9690000673115</g:gtin>
-    <g:mpn>APP-1085</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000688953</g:id>
+    <g:id>8690000002330</g:id>
     <title>Lenovo ThinkPad E14 Ryzen 5</title>
-    <link>https://example-store.com/p/9690000688953</link>
-    <g:price>93319 TRY</g:price>
+    <link>https://example-store.com/p/8690000002330</link>
+    <g:price>28210 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690000688953/500/500</g:image_link>
+    <g:image_link>https://loremflickr.com/600/600/laptop?lock=17</g:image_link>
     <g:brand>Lenovo</g:brand>
-    <g:gtin>9690000688953</g:gtin>
-    <g:mpn>LEN-1087</g:mpn>
+    <g:gtin>8690000002330</g:gtin>
+    <g:mpn>LEN-1017</g:mpn>
     <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690000696872</g:id>
-    <title>HP ThinkPad E14 Ryzen 5</title>
-    <link>https://example-store.com/p/9690000696872</link>
-    <g:price>42210 TRY</g:price>
-    <g:sale_price>42210 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000696872/500/500</g:image_link>
+    <g:id>8690000002467</g:id>
+    <title>Lenovo LOQ 15 RTX 4050</title>
+    <link>https://example-store.com/p/8690000002467</link>
+    <g:price>41990 TRY</g:price>
+    <g:sale_price>36300 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/gaming%20laptop?lock=18</g:image_link>
+    <g:brand>Lenovo</g:brand>
+    <g:gtin>8690000002467</g:gtin>
+    <g:mpn>LEN-1018</g:mpn>
+    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
+    <g:availability>in stock</g:availability>
+  </item>
+  <item>
+    <g:id>8690000002604</g:id>
+    <title>HP Victus 15 RTX 3050</title>
+    <link>https://example-store.com/p/8690000002604</link>
+    <g:price>31660 TRY</g:price>
+    <g:sale_price>28480 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/gaming%20laptop?lock=19</g:image_link>
     <g:brand>HP</g:brand>
-    <g:gtin>9690000696872</g:gtin>
-    <g:mpn>HP-1088</g:mpn>
+    <g:gtin>8690000002604</g:gtin>
+    <g:mpn>HP-1019</g:mpn>
     <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690000712710</g:id>
-    <title>Casper ThinkPad E14 Ryzen 5</title>
-    <link>https://example-store.com/p/9690000712710</link>
-    <g:price>99996 TRY</g:price>
-    <g:sale_price>99996 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000712710/500/500</g:image_link>
-    <g:brand>Casper</g:brand>
-    <g:gtin>9690000712710</g:gtin>
-    <g:mpn>CAS-1090</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000720629</g:id>
-    <title>Apple IdeaPad Slim 3 i7</title>
-    <link>https://example-store.com/p/9690000720629</link>
-    <g:price>62166 TRY</g:price>
-    <g:sale_price>62166 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000720629/500/500</g:image_link>
-    <g:brand>Apple</g:brand>
-    <g:gtin>9690000720629</g:gtin>
-    <g:mpn>APP-1091</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000744386</g:id>
-    <title>HP IdeaPad Slim 3 i7</title>
-    <link>https://example-store.com/p/9690000744386</link>
-    <g:price>81050 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000744386/500/500</g:image_link>
-    <g:brand>HP</g:brand>
-    <g:gtin>9690000744386</g:gtin>
-    <g:mpn>HP-1094</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000768143</g:id>
-    <title>Apple Victus 15 RTX 3050</title>
-    <link>https://example-store.com/p/9690000768143</link>
-    <g:price>104995 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000768143/500/500</g:image_link>
-    <g:brand>Apple</g:brand>
-    <g:gtin>9690000768143</g:gtin>
-    <g:mpn>APP-1097</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000776062</g:id>
-    <title>Asus Victus 15 RTX 3050</title>
-    <link>https://example-store.com/p/9690000776062</link>
-    <g:price>31282 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000776062/500/500</g:image_link>
-    <g:brand>Asus</g:brand>
-    <g:gtin>9690000776062</g:gtin>
-    <g:mpn>ASU-1098</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000799819</g:id>
-    <title>Monster Victus 15 RTX 3050</title>
-    <link>https://example-store.com/p/9690000799819</link>
-    <g:price>43897 TRY</g:price>
-    <g:sale_price>43897 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000799819/500/500</g:image_link>
-    <g:brand>Monster</g:brand>
-    <g:gtin>9690000799819</g:gtin>
-    <g:mpn>MON-1101</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000815657</g:id>
-    <title>Apple Pavilion 14 i5 512GB</title>
-    <link>https://example-store.com/p/9690000815657</link>
-    <g:price>66073 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000815657/500/500</g:image_link>
-    <g:brand>Apple</g:brand>
-    <g:gtin>9690000815657</g:gtin>
-    <g:mpn>APP-1103</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000839414</g:id>
+    <g:id>8690000002741</g:id>
     <title>HP Pavilion 14 i5 512GB</title>
-    <link>https://example-store.com/p/9690000839414</link>
-    <g:price>108871 TRY</g:price>
-    <g:sale_price>108871 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000839414/500/500</g:image_link>
+    <link>https://example-store.com/p/8690000002741</link>
+    <g:price>25960 TRY</g:price>
+    <g:sale_price>22450 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/laptop?lock=20</g:image_link>
     <g:brand>HP</g:brand>
-    <g:gtin>9690000839414</g:gtin>
-    <g:mpn>HP-1106</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000847333</g:id>
-    <title>Monster Pavilion 14 i5 512GB</title>
-    <link>https://example-store.com/p/9690000847333</link>
-    <g:price>103929 TRY</g:price>
-    <g:sale_price>103929 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000847333/500/500</g:image_link>
-    <g:brand>Monster</g:brand>
-    <g:gtin>9690000847333</g:gtin>
-    <g:mpn>MON-1107</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000871090</g:id>
-    <title>Asus Abra A5 V20 i7 RTX 4050</title>
-    <link>https://example-store.com/p/9690000871090</link>
-    <g:price>31404 TRY</g:price>
-    <g:sale_price>31404 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000871090/500/500</g:image_link>
-    <g:brand>Asus</g:brand>
-    <g:gtin>9690000871090</g:gtin>
-    <g:mpn>ASU-1110</g:mpn>
+    <g:gtin>8690000002741</g:gtin>
+    <g:mpn>HP-1020</g:mpn>
     <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
     <g:availability>out of stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690000879009</g:id>
-    <title>Lenovo Abra A5 V20 i7 RTX 4050</title>
-    <link>https://example-store.com/p/9690000879009</link>
-    <g:price>25631 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000879009/500/500</g:image_link>
-    <g:brand>Lenovo</g:brand>
-    <g:gtin>9690000879009</g:gtin>
-    <g:mpn>LEN-1111</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000886928</g:id>
-    <title>HP Abra A5 V20 i7 RTX 4050</title>
-    <link>https://example-store.com/p/9690000886928</link>
-    <g:price>32369 TRY</g:price>
-    <g:sale_price>32369 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000886928/500/500</g:image_link>
-    <g:brand>HP</g:brand>
-    <g:gtin>9690000886928</g:gtin>
-    <g:mpn>HP-1112</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000894847</g:id>
-    <title>Monster Abra A5 V20 i7 RTX 4050</title>
-    <link>https://example-store.com/p/9690000894847</link>
-    <g:price>44810 TRY</g:price>
-    <g:sale_price>44810 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000894847/500/500</g:image_link>
-    <g:brand>Monster</g:brand>
-    <g:gtin>9690000894847</g:gtin>
-    <g:mpn>MON-1113</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000902766</g:id>
-    <title>Casper Abra A5 V20 i7 RTX 4050</title>
-    <link>https://example-store.com/p/9690000902766</link>
-    <g:price>51167 TRY</g:price>
-    <g:sale_price>51167 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690000902766/500/500</g:image_link>
+    <g:id>8690000003015</g:id>
+    <title>Casper Excalibur G870 i7</title>
+    <link>https://example-store.com/p/8690000003015</link>
+    <g:price>38300 TRY</g:price>
+    <g:sale_price>33410 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/laptop?lock=22</g:image_link>
     <g:brand>Casper</g:brand>
-    <g:gtin>9690000902766</g:gtin>
-    <g:mpn>CAS-1114</g:mpn>
+    <g:gtin>8690000003015</g:gtin>
+    <g:mpn>CAS-1022</g:mpn>
     <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>out of stock</g:availability>
-
+    <g:availability>in stock</g:availability>
   </item>
   <item>
-    <g:id>9690000910685</g:id>
-    <title>Apple Excalibur G870 i5</title>
-    <link>https://example-store.com/p/9690000910685</link>
-    <g:price>17935 TRY</g:price>
+    <g:id>8690000003152</g:id>
+    <title>Samsung 55Q60D QLED 4K</title>
+    <link>https://example-store.com/p/8690000003152</link>
+    <g:price>29110 TRY</g:price>
+    <g:sale_price>26620 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/smart%20tv?lock=23</g:image_link>
+    <g:brand>Samsung</g:brand>
+    <g:gtin>8690000003152</g:gtin>
+    <g:mpn>SAM-1023</g:mpn>
+    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
+    <g:availability>in stock</g:availability>
+  </item>
+  <item>
+    <g:id>8690000003289</g:id>
+    <title>Samsung 65Q80D QLED 4K</title>
+    <link>https://example-store.com/p/8690000003289</link>
+    <g:price>47020 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690000910685/500/500</g:image_link>
+    <g:image_link>https://loremflickr.com/600/600/smart%20tv?lock=24</g:image_link>
+    <g:brand>Samsung</g:brand>
+    <g:gtin>8690000003289</g:gtin>
+    <g:mpn>SAM-1024</g:mpn>
+    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
+    <g:availability>in stock</g:availability>
+  </item>
+  <item>
+    <g:id>8690000003700</g:id>
+    <title>Sony 65X90L 4K</title>
+    <link>https://example-store.com/p/8690000003700</link>
+    <g:price>53220 TRY</g:price>
+    <g:sale_price>44240 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/smart%20tv?lock=27</g:image_link>
+    <g:brand>Sony</g:brand>
+    <g:gtin>8690000003700</g:gtin>
+    <g:mpn>SON-1027</g:mpn>
+    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
+    <g:availability>in stock</g:availability>
+  </item>
+  <item>
+    <g:id>8690000003974</g:id>
+    <title>TCL 55C645 QLED 4K</title>
+    <link>https://example-store.com/p/8690000003974</link>
+    <g:price>23660 TRY</g:price>
+
+    <g:image_link>https://loremflickr.com/600/600/smart%20tv?lock=29</g:image_link>
+    <g:brand>TCL</g:brand>
+    <g:gtin>8690000003974</g:gtin>
+    <g:mpn>TCL-1029</g:mpn>
+    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
+    <g:availability>out of stock</g:availability>
+  </item>
+  <item>
+    <g:id>8690000004111</g:id>
+    <title>Vestel 50U9601 4K</title>
+    <link>https://example-store.com/p/8690000004111</link>
+    <g:price>17370 TRY</g:price>
+    <g:sale_price>15560 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/led%20tv?lock=30</g:image_link>
+    <g:brand>Vestel</g:brand>
+    <g:gtin>8690000004111</g:gtin>
+    <g:mpn>VES-1030</g:mpn>
+    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
+    <g:availability>in stock</g:availability>
+  </item>
+  <item>
+    <g:id>8690000004248</g:id>
+    <title>Apple AirPods Pro 2. Nesil USB-C</title>
+    <link>https://example-store.com/p/8690000004248</link>
+    <g:price>9220 TRY</g:price>
+    <g:sale_price>7850 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/airpods?lock=31</g:image_link>
     <g:brand>Apple</g:brand>
-    <g:gtin>9690000910685</g:gtin>
-    <g:mpn>APP-1115</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
+    <g:gtin>8690000004248</g:gtin>
+    <g:mpn>APP-1031</g:mpn>
+    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Kulaklık</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690000926523</g:id>
-    <title>Lenovo Excalibur G870 i5</title>
-    <link>https://example-store.com/p/9690000926523</link>
-    <g:price>38118 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000926523/500/500</g:image_link>
-    <g:brand>Lenovo</g:brand>
-    <g:gtin>9690000926523</g:gtin>
-    <g:mpn>LEN-1117</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
+    <g:id>8690000004385</g:id>
+    <title>Apple AirPods 3. Nesil</title>
+    <link>https://example-store.com/p/8690000004385</link>
+    <g:price>6610 TRY</g:price>
+    <g:sale_price>5830 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/earbuds?lock=32</g:image_link>
+    <g:brand>Apple</g:brand>
+    <g:gtin>8690000004385</g:gtin>
+    <g:mpn>APP-1032</g:mpn>
+    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Kulaklık</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690000934442</g:id>
-    <title>HP Excalibur G870 i5</title>
-    <link>https://example-store.com/p/9690000934442</link>
-    <g:price>103638 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000934442/500/500</g:image_link>
-    <g:brand>HP</g:brand>
-    <g:gtin>9690000934442</g:gtin>
-    <g:mpn>HP-1118</g:mpn>
-    <g:product_type>Elektronik &gt; Bilgisayar &gt; Dizüstü</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000958199</g:id>
-    <title>Arçelik No Frost Buzdolabı 540 Litre</title>
-    <link>https://example-store.com/p/9690000958199</link>
-    <g:price>24389 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000958199/500/500</g:image_link>
-    <g:brand>Arçelik</g:brand>
-    <g:gtin>9690000958199</g:gtin>
-    <g:mpn>ARÇ-1121</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000981956</g:id>
-    <title>Vestel No Frost Buzdolabı 540 Litre</title>
-    <link>https://example-store.com/p/9690000981956</link>
-    <g:price>46376 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000981956/500/500</g:image_link>
-    <g:brand>Vestel</g:brand>
-    <g:gtin>9690000981956</g:gtin>
-    <g:mpn>VES-1124</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690000989875</g:id>
-    <title>Samsung No Frost Buzdolabı 540 Litre</title>
-    <link>https://example-store.com/p/9690000989875</link>
-    <g:price>57359 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690000989875/500/500</g:image_link>
+    <g:id>8690000004522</g:id>
+    <title>Samsung Galaxy Buds2 Pro</title>
+    <link>https://example-store.com/p/8690000004522</link>
+    <g:price>4820 TRY</g:price>
+    <g:sale_price>4460 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/earbuds?lock=33</g:image_link>
     <g:brand>Samsung</g:brand>
-    <g:gtin>9690000989875</g:gtin>
-    <g:mpn>SAM-1125</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:gtin>8690000004522</g:gtin>
+    <g:mpn>SAM-1033</g:mpn>
+    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Kulaklık</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690000997794</g:id>
-    <title>LG No Frost Buzdolabı 540 Litre</title>
-    <link>https://example-store.com/p/9690000997794</link>
-    <g:price>53174 TRY</g:price>
+    <g:id>8690000004659</g:id>
+    <title>Sony WH-1000XM5</title>
+    <link>https://example-store.com/p/8690000004659</link>
+    <g:price>12950 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690000997794/500/500</g:image_link>
-    <g:brand>LG</g:brand>
-    <g:gtin>9690000997794</g:gtin>
-    <g:mpn>LG-1126</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:image_link>https://loremflickr.com/600/600/headphones?lock=34</g:image_link>
+    <g:brand>Sony</g:brand>
+    <g:gtin>8690000004659</g:gtin>
+    <g:mpn>SON-1034</g:mpn>
+    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Kulaklık</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001029470</g:id>
-    <title>Vestel Çamaşır Makinesi 9 kg 1200 Devir</title>
-    <link>https://example-store.com/p/9690001029470</link>
-    <g:price>30643 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001029470/500/500</g:image_link>
-    <g:brand>Vestel</g:brand>
-    <g:gtin>9690001029470</g:gtin>
-    <g:mpn>VES-1130</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
-    <g:availability>out of stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690001069065</g:id>
-    <title>Siemens Bulaşık Makinesi 6 Programlı</title>
-    <link>https://example-store.com/p/9690001069065</link>
-    <g:price>42185 TRY</g:price>
-    <g:sale_price>42185 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001069065/500/500</g:image_link>
-    <g:brand>Siemens</g:brand>
-    <g:gtin>9690001069065</g:gtin>
-    <g:mpn>SIE-1135</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:id>8690000004933</g:id>
+    <title>Bose QuietComfort Ultra</title>
+    <link>https://example-store.com/p/8690000004933</link>
+    <g:price>14270 TRY</g:price>
+    <g:sale_price>13070 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/headphones?lock=36</g:image_link>
+    <g:brand>Bose</g:brand>
+    <g:gtin>8690000004933</g:gtin>
+    <g:mpn>BOS-1036</g:mpn>
+    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Kulaklık</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001076984</g:id>
-    <title>Vestel Bulaşık Makinesi 6 Programlı</title>
-    <link>https://example-store.com/p/9690001076984</link>
-    <g:price>14984 TRY</g:price>
+    <g:id>8690000005070</g:id>
+    <title>Apple Watch Series 9 45mm</title>
+    <link>https://example-store.com/p/8690000005070</link>
+    <g:price>18040 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690001076984/500/500</g:image_link>
-    <g:brand>Vestel</g:brand>
-    <g:gtin>9690001076984</g:gtin>
-    <g:mpn>VES-1136</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:image_link>https://loremflickr.com/600/600/apple%20watch?lock=37</g:image_link>
+    <g:brand>Apple</g:brand>
+    <g:gtin>8690000005070</g:gtin>
+    <g:mpn>APP-1037</g:mpn>
+    <g:product_type>Elektronik &gt; Giyilebilir &gt; Akıllı Saat</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001092822</g:id>
-    <title>LG Bulaşık Makinesi 6 Programlı</title>
-    <link>https://example-store.com/p/9690001092822</link>
-    <g:price>11638 TRY</g:price>
-    <g:sale_price>11638 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001092822/500/500</g:image_link>
-    <g:brand>LG</g:brand>
-    <g:gtin>9690001092822</g:gtin>
-    <g:mpn>LG-1138</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
-    <g:availability>in stock</g:availability>
+    <g:id>8690000005344</g:id>
+    <title>Samsung Galaxy Watch6 44mm</title>
+    <link>https://example-store.com/p/8690000005344</link>
+    <g:price>10550 TRY</g:price>
 
-  </item>
-  <item>
-    <g:id>9690001100741</g:id>
-    <title>Arçelik Kurutmalı Çamaşır Makinesi 8 kg</title>
-    <link>https://example-store.com/p/9690001100741</link>
-    <g:price>44808 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001100741/500/500</g:image_link>
-    <g:brand>Arçelik</g:brand>
-    <g:gtin>9690001100741</g:gtin>
-    <g:mpn>ARÇ-1139</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690001132417</g:id>
-    <title>Samsung Kurutmalı Çamaşır Makinesi 8 kg</title>
-    <link>https://example-store.com/p/9690001132417</link>
-    <g:price>24728 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001132417/500/500</g:image_link>
+    <g:image_link>https://loremflickr.com/600/600/smartwatch?lock=39</g:image_link>
     <g:brand>Samsung</g:brand>
-    <g:gtin>9690001132417</g:gtin>
-    <g:mpn>SAM-1143</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:gtin>8690000005344</g:gtin>
+    <g:mpn>SAM-1039</g:mpn>
+    <g:product_type>Elektronik &gt; Giyilebilir &gt; Akıllı Saat</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001140336</g:id>
-    <title>LG Kurutmalı Çamaşır Makinesi 8 kg</title>
-    <link>https://example-store.com/p/9690001140336</link>
-    <g:price>46894 TRY</g:price>
+    <g:id>8690000005481</g:id>
+    <title>Huawei Watch GT 4 46mm</title>
+    <link>https://example-store.com/p/8690000005481</link>
+    <g:price>7290 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690001140336/500/500</g:image_link>
-    <g:brand>LG</g:brand>
-    <g:gtin>9690001140336</g:gtin>
-    <g:mpn>LG-1144</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:image_link>https://loremflickr.com/600/600/smartwatch?lock=40</g:image_link>
+    <g:brand>Huawei</g:brand>
+    <g:gtin>8690000005481</g:gtin>
+    <g:mpn>HUA-1040</g:mpn>
+    <g:product_type>Elektronik &gt; Giyilebilir &gt; Akıllı Saat</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001164093</g:id>
-    <title>Siemens Ankastre Fırın Multifonksiyon</title>
-    <link>https://example-store.com/p/9690001164093</link>
-    <g:price>58172 TRY</g:price>
-    <g:sale_price>58172 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001164093/500/500</g:image_link>
-    <g:brand>Siemens</g:brand>
-    <g:gtin>9690001164093</g:gtin>
-    <g:mpn>SIE-1147</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:id>8690000005618</g:id>
+    <title>Xiaomi Smart Band 8</title>
+    <link>https://example-store.com/p/8690000005618</link>
+    <g:price>1470 TRY</g:price>
+    <g:sale_price>1370 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/fitness%20tracker?lock=41</g:image_link>
+    <g:brand>Xiaomi</g:brand>
+    <g:gtin>8690000005618</g:gtin>
+    <g:mpn>XIA-1041</g:mpn>
+    <g:product_type>Elektronik &gt; Giyilebilir &gt; Akıllı Saat</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001172012</g:id>
-    <title>Vestel Ankastre Fırın Multifonksiyon</title>
-    <link>https://example-store.com/p/9690001172012</link>
-    <g:price>13661 TRY</g:price>
-    <g:sale_price>13661 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001172012/500/500</g:image_link>
-    <g:brand>Vestel</g:brand>
-    <g:gtin>9690001172012</g:gtin>
-    <g:mpn>VES-1148</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:id>8690000005755</g:id>
+    <title>Amazfit GTR 4</title>
+    <link>https://example-store.com/p/8690000005755</link>
+    <g:price>6250 TRY</g:price>
+
+    <g:image_link>https://loremflickr.com/600/600/smartwatch?lock=42</g:image_link>
+    <g:brand>Amazfit</g:brand>
+    <g:gtin>8690000005755</g:gtin>
+    <g:mpn>AMA-1042</g:mpn>
+    <g:product_type>Elektronik &gt; Giyilebilir &gt; Akıllı Saat</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001187850</g:id>
-    <title>LG Ankastre Fırın Multifonksiyon</title>
-    <link>https://example-store.com/p/9690001187850</link>
-    <g:price>23300 TRY</g:price>
-    <g:sale_price>23300 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001187850/500/500</g:image_link>
-    <g:brand>LG</g:brand>
-    <g:gtin>9690001187850</g:gtin>
-    <g:mpn>LG-1150</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:id>8690000005892</g:id>
+    <title>Sony PlayStation 5 Slim</title>
+    <link>https://example-store.com/p/8690000005892</link>
+    <g:price>23430 TRY</g:price>
+    <g:sale_price>21800 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/playstation%205?lock=43</g:image_link>
+    <g:brand>Sony</g:brand>
+    <g:gtin>8690000005892</g:gtin>
+    <g:mpn>SON-1043</g:mpn>
+    <g:product_type>Elektronik &gt; Oyun &gt; Oyun Konsolu</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001211607</g:id>
-    <title>Siemens Solo Mikrodalga Fırın 25 Litre</title>
-    <link>https://example-store.com/p/9690001211607</link>
-    <g:price>32433 TRY</g:price>
-    <g:sale_price>32433 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001211607/500/500</g:image_link>
-    <g:brand>Siemens</g:brand>
-    <g:gtin>9690001211607</g:gtin>
-    <g:mpn>SIE-1153</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
-    <g:availability>out of stock</g:availability>
+    <g:id>8690000006029</g:id>
+    <title>Sony PlayStation 5 Digital</title>
+    <link>https://example-store.com/p/8690000006029</link>
+    <g:price>20910 TRY</g:price>
 
-  </item>
-  <item>
-    <g:id>9690001235364</g:id>
-    <title>LG Solo Mikrodalga Fırın 25 Litre</title>
-    <link>https://example-store.com/p/9690001235364</link>
-    <g:price>8814 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001235364/500/500</g:image_link>
-    <g:brand>LG</g:brand>
-    <g:gtin>9690001235364</g:gtin>
-    <g:mpn>LG-1156</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:image_link>https://loremflickr.com/600/600/playstation%205?lock=44</g:image_link>
+    <g:brand>Sony</g:brand>
+    <g:gtin>8690000006029</g:gtin>
+    <g:mpn>SON-1044</g:mpn>
+    <g:product_type>Elektronik &gt; Oyun &gt; Oyun Konsolu</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001259121</g:id>
-    <title>Siemens Derin Dondurucu 7 Çekmece</title>
-    <link>https://example-store.com/p/9690001259121</link>
-    <g:price>9411 TRY</g:price>
-    <g:sale_price>9411 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001259121/500/500</g:image_link>
-    <g:brand>Siemens</g:brand>
-    <g:gtin>9690001259121</g:gtin>
-    <g:mpn>SIE-1159</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:id>8690000006166</g:id>
+    <title>Microsoft Xbox Series X 1TB</title>
+    <link>https://example-store.com/p/8690000006166</link>
+    <g:price>24490 TRY</g:price>
+    <g:sale_price>22060 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/xbox?lock=45</g:image_link>
+    <g:brand>Microsoft</g:brand>
+    <g:gtin>8690000006166</g:gtin>
+    <g:mpn>MIC-1045</g:mpn>
+    <g:product_type>Elektronik &gt; Oyun &gt; Oyun Konsolu</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001267040</g:id>
-    <title>Vestel Derin Dondurucu 7 Çekmece</title>
-    <link>https://example-store.com/p/9690001267040</link>
-    <g:price>64480 TRY</g:price>
-    <g:sale_price>64480 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001267040/500/500</g:image_link>
-    <g:brand>Vestel</g:brand>
-    <g:gtin>9690001267040</g:gtin>
-    <g:mpn>VES-1160</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:id>8690000006303</g:id>
+    <title>Microsoft Xbox Series S 512GB</title>
+    <link>https://example-store.com/p/8690000006303</link>
+    <g:price>14040 TRY</g:price>
+    <g:sale_price>11890 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/xbox?lock=46</g:image_link>
+    <g:brand>Microsoft</g:brand>
+    <g:gtin>8690000006303</g:gtin>
+    <g:mpn>MIC-1046</g:mpn>
+    <g:product_type>Elektronik &gt; Oyun &gt; Oyun Konsolu</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001290797</g:id>
-    <title>Arçelik Gardırop Tipi Buzdolabı 600 Litre</title>
-    <link>https://example-store.com/p/9690001290797</link>
-    <g:price>28451 TRY</g:price>
-    <g:sale_price>28451 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001290797/500/500</g:image_link>
+    <g:id>8690000006440</g:id>
+    <title>Nintendo Switch OLED</title>
+    <link>https://example-store.com/p/8690000006440</link>
+    <g:price>13290 TRY</g:price>
+    <g:sale_price>11050 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/nintendo%20switch?lock=47</g:image_link>
+    <g:brand>Nintendo</g:brand>
+    <g:gtin>8690000006440</g:gtin>
+    <g:mpn>NIN-1047</g:mpn>
+    <g:product_type>Elektronik &gt; Oyun &gt; Oyun Konsolu</g:product_type>
+    <g:availability>in stock</g:availability>
+  </item>
+  <item>
+    <g:id>8690000006577</g:id>
+    <title>Arçelik 584611 EI No Frost Buzdolabı</title>
+    <link>https://example-store.com/p/8690000006577</link>
+    <g:price>34800 TRY</g:price>
+    <g:sale_price>32070 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/refrigerator?lock=48</g:image_link>
     <g:brand>Arçelik</g:brand>
-    <g:gtin>9690001290797</g:gtin>
-    <g:mpn>ARÇ-1163</g:mpn>
+    <g:gtin>8690000006577</g:gtin>
+    <g:mpn>ARX-1048</g:mpn>
     <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001298716</g:id>
-    <title>Bosch Gardırop Tipi Buzdolabı 600 Litre</title>
-    <link>https://example-store.com/p/9690001298716</link>
-    <g:price>45483 TRY</g:price>
+    <g:id>8690000006714</g:id>
+    <title>Bosch KGN56XLEA No Frost Buzdolabı</title>
+    <link>https://example-store.com/p/8690000006714</link>
+    <g:price>28140 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690001298716/500/500</g:image_link>
+    <g:image_link>https://loremflickr.com/600/600/refrigerator?lock=49</g:image_link>
     <g:brand>Bosch</g:brand>
-    <g:gtin>9690001298716</g:gtin>
-    <g:mpn>BOS-1164</g:mpn>
+    <g:gtin>8690000006714</g:gtin>
+    <g:mpn>BOS-1049</g:mpn>
     <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001306635</g:id>
-    <title>Siemens Gardırop Tipi Buzdolabı 600 Litre</title>
-    <link>https://example-store.com/p/9690001306635</link>
-    <g:price>33843 TRY</g:price>
+    <g:id>8690000006851</g:id>
+    <title>Samsung RS68A8840S9 Gardırop Buzdolabı</title>
+    <link>https://example-store.com/p/8690000006851</link>
+    <g:price>40950 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690001306635/500/500</g:image_link>
+    <g:image_link>https://loremflickr.com/600/600/refrigerator?lock=50</g:image_link>
+    <g:brand>Samsung</g:brand>
+    <g:gtin>8690000006851</g:gtin>
+    <g:mpn>SAM-1050</g:mpn>
+    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:availability>in stock</g:availability>
+  </item>
+  <item>
+    <g:id>8690000007125</g:id>
+    <title>Siemens WG44G2A0TR 9 kg Çamaşır Makinesi</title>
+    <link>https://example-store.com/p/8690000007125</link>
+    <g:price>23680 TRY</g:price>
+    <g:sale_price>20670 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/washing%20machine?lock=52</g:image_link>
     <g:brand>Siemens</g:brand>
-    <g:gtin>9690001306635</g:gtin>
-    <g:mpn>SIE-1165</g:mpn>
+    <g:gtin>8690000007125</g:gtin>
+    <g:mpn>SIE-1052</g:mpn>
     <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001314554</g:id>
-    <title>Vestel Gardırop Tipi Buzdolabı 600 Litre</title>
-    <link>https://example-store.com/p/9690001314554</link>
-    <g:price>29997 TRY</g:price>
-    <g:sale_price>29997 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001314554/500/500</g:image_link>
-    <g:brand>Vestel</g:brand>
-    <g:gtin>9690001314554</g:gtin>
-    <g:mpn>VES-1166</g:mpn>
+    <g:id>8690000007262</g:id>
+    <title>Bosch WGG2440XTR 9 kg Çamaşır Makinesi</title>
+    <link>https://example-store.com/p/8690000007262</link>
+    <g:price>22170 TRY</g:price>
+    <g:sale_price>20260 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/washing%20machine?lock=53</g:image_link>
+    <g:brand>Bosch</g:brand>
+    <g:gtin>8690000007262</g:gtin>
+    <g:mpn>BOS-1053</g:mpn>
     <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690001354149</g:id>
-    <title>Vestel 55 inç 4K UHD Smart TV</title>
-    <link>https://example-store.com/p/9690001354149</link>
-    <g:price>51565 TRY</g:price>
-    <g:sale_price>51565 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001354149/500/500</g:image_link>
+    <g:id>8690000007536</g:id>
+    <title>Vestel BM 5101 Bulaşık Makinesi</title>
+    <link>https://example-store.com/p/8690000007536</link>
+    <g:price>14440 TRY</g:price>
+
+    <g:image_link>https://loremflickr.com/600/600/dishwasher?lock=55</g:image_link>
     <g:brand>Vestel</g:brand>
-    <g:gtin>9690001354149</g:gtin>
-    <g:mpn>VES-1171</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>55inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001362068</g:id>
-    <title>Philips 55 inç 4K UHD Smart TV</title>
-    <link>https://example-store.com/p/9690001362068</link>
-    <g:price>47421 TRY</g:price>
-    <g:sale_price>47421 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001362068/500/500</g:image_link>
-    <g:brand>Philips</g:brand>
-    <g:gtin>9690001362068</g:gtin>
-    <g:mpn>PHI-1172</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>55inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001369987</g:id>
-    <title>TCL 55 inç 4K UHD Smart TV</title>
-    <link>https://example-store.com/p/9690001369987</link>
-    <g:price>59534 TRY</g:price>
-    <g:sale_price>59534 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001369987/500/500</g:image_link>
-    <g:brand>TCL</g:brand>
-    <g:gtin>9690001369987</g:gtin>
-    <g:mpn>TCL-1173</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>55inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001377906</g:id>
-    <title>Sony 55 inç 4K UHD Smart TV</title>
-    <link>https://example-store.com/p/9690001377906</link>
-    <g:price>82878 TRY</g:price>
-    <g:sale_price>82878 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001377906/500/500</g:image_link>
-    <g:brand>Sony</g:brand>
-    <g:gtin>9690001377906</g:gtin>
-    <g:mpn>SON-1174</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>55inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001393744</g:id>
-    <title>LG 65 inç QLED 4K Smart TV</title>
-    <link>https://example-store.com/p/9690001393744</link>
-    <g:price>52114 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001393744/500/500</g:image_link>
-    <g:brand>LG</g:brand>
-    <g:gtin>9690001393744</g:gtin>
-    <g:mpn>LG-1176</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>65inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001417501</g:id>
-    <title>TCL 65 inç QLED 4K Smart TV</title>
-    <link>https://example-store.com/p/9690001417501</link>
-    <g:price>35626 TRY</g:price>
-    <g:sale_price>35626 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001417501/500/500</g:image_link>
-    <g:brand>TCL</g:brand>
-    <g:gtin>9690001417501</g:gtin>
-    <g:mpn>TCL-1179</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>65inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001425420</g:id>
-    <title>Sony 65 inç QLED 4K Smart TV</title>
-    <link>https://example-store.com/p/9690001425420</link>
-    <g:price>63883 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001425420/500/500</g:image_link>
-    <g:brand>Sony</g:brand>
-    <g:gtin>9690001425420</g:gtin>
-    <g:mpn>SON-1180</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>65inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001433339</g:id>
-    <title>Samsung 50 inç 4K Google TV</title>
-    <link>https://example-store.com/p/9690001433339</link>
-    <g:price>73555 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001433339/500/500</g:image_link>
-    <g:brand>Samsung</g:brand>
-    <g:gtin>9690001433339</g:gtin>
-    <g:mpn>SAM-1181</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>50inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001457096</g:id>
-    <title>Philips 50 inç 4K Google TV</title>
-    <link>https://example-store.com/p/9690001457096</link>
-    <g:price>85906 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001457096/500/500</g:image_link>
-    <g:brand>Philips</g:brand>
-    <g:gtin>9690001457096</g:gtin>
-    <g:mpn>PHI-1184</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>50inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001465015</g:id>
-    <title>TCL 50 inç 4K Google TV</title>
-    <link>https://example-store.com/p/9690001465015</link>
-    <g:price>10652 TRY</g:price>
-    <g:sale_price>10652 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001465015/500/500</g:image_link>
-    <g:brand>TCL</g:brand>
-    <g:gtin>9690001465015</g:gtin>
-    <g:mpn>TCL-1185</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>50inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001480853</g:id>
-    <title>Samsung 75 inç OLED 4K TV</title>
-    <link>https://example-store.com/p/9690001480853</link>
-    <g:price>71275 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001480853/500/500</g:image_link>
-    <g:brand>Samsung</g:brand>
-    <g:gtin>9690001480853</g:gtin>
-    <g:mpn>SAM-1187</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>out of stock</g:availability>
-    <g:ekran>75inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001488772</g:id>
-    <title>LG 75 inç OLED 4K TV</title>
-    <link>https://example-store.com/p/9690001488772</link>
-    <g:price>37681 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001488772/500/500</g:image_link>
-    <g:brand>LG</g:brand>
-    <g:gtin>9690001488772</g:gtin>
-    <g:mpn>LG-1188</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>out of stock</g:availability>
-    <g:ekran>75inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001496691</g:id>
-    <title>Vestel 75 inç OLED 4K TV</title>
-    <link>https://example-store.com/p/9690001496691</link>
-    <g:price>43362 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001496691/500/500</g:image_link>
-    <g:brand>Vestel</g:brand>
-    <g:gtin>9690001496691</g:gtin>
-    <g:mpn>VES-1189</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>out of stock</g:availability>
-    <g:ekran>75inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001504610</g:id>
-    <title>Philips 75 inç OLED 4K TV</title>
-    <link>https://example-store.com/p/9690001504610</link>
-    <g:price>80253 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001504610/500/500</g:image_link>
-    <g:brand>Philips</g:brand>
-    <g:gtin>9690001504610</g:gtin>
-    <g:mpn>PHI-1190</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>75inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001512529</g:id>
-    <title>TCL 75 inç OLED 4K TV</title>
-    <link>https://example-store.com/p/9690001512529</link>
-    <g:price>20106 TRY</g:price>
-    <g:sale_price>20106 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001512529/500/500</g:image_link>
-    <g:brand>TCL</g:brand>
-    <g:gtin>9690001512529</g:gtin>
-    <g:mpn>TCL-1191</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>75inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001536286</g:id>
-    <title>LG 43 inç Full HD Smart TV</title>
-    <link>https://example-store.com/p/9690001536286</link>
-    <g:price>60573 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001536286/500/500</g:image_link>
-    <g:brand>LG</g:brand>
-    <g:gtin>9690001536286</g:gtin>
-    <g:mpn>LG-1194</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>43inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001560043</g:id>
-    <title>TCL 43 inç Full HD Smart TV</title>
-    <link>https://example-store.com/p/9690001560043</link>
-    <g:price>72370 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001560043/500/500</g:image_link>
-    <g:brand>TCL</g:brand>
-    <g:gtin>9690001560043</g:gtin>
-    <g:mpn>TCL-1197</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>43inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001567962</g:id>
-    <title>Sony 43 inç Full HD Smart TV</title>
-    <link>https://example-store.com/p/9690001567962</link>
-    <g:price>38193 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001567962/500/500</g:image_link>
-    <g:brand>Sony</g:brand>
-    <g:gtin>9690001567962</g:gtin>
-    <g:mpn>SON-1198</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>43inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001575881</g:id>
-    <title>Samsung Nano Cell 65 inç 4K TV</title>
-    <link>https://example-store.com/p/9690001575881</link>
-    <g:price>85020 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001575881/500/500</g:image_link>
-    <g:brand>Samsung</g:brand>
-    <g:gtin>9690001575881</g:gtin>
-    <g:mpn>SAM-1199</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>65inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001583800</g:id>
-    <title>LG Nano Cell 65 inç 4K TV</title>
-    <link>https://example-store.com/p/9690001583800</link>
-    <g:price>72206 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001583800/500/500</g:image_link>
-    <g:brand>LG</g:brand>
-    <g:gtin>9690001583800</g:gtin>
-    <g:mpn>LG-1200</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>65inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001591719</g:id>
-    <title>Vestel Nano Cell 65 inç 4K TV</title>
-    <link>https://example-store.com/p/9690001591719</link>
-    <g:price>60227 TRY</g:price>
-    <g:sale_price>60227 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001591719/500/500</g:image_link>
-    <g:brand>Vestel</g:brand>
-    <g:gtin>9690001591719</g:gtin>
-    <g:mpn>VES-1201</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>65inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001599638</g:id>
-    <title>Philips Nano Cell 65 inç 4K TV</title>
-    <link>https://example-store.com/p/9690001599638</link>
-    <g:price>68258 TRY</g:price>
-    <g:sale_price>68258 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001599638/500/500</g:image_link>
-    <g:brand>Philips</g:brand>
-    <g:gtin>9690001599638</g:gtin>
-    <g:mpn>PHI-1202</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>65inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001607557</g:id>
-    <title>TCL Nano Cell 65 inç 4K TV</title>
-    <link>https://example-store.com/p/9690001607557</link>
-    <g:price>82794 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001607557/500/500</g:image_link>
-    <g:brand>TCL</g:brand>
-    <g:gtin>9690001607557</g:gtin>
-    <g:mpn>TCL-1203</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>65inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001615476</g:id>
-    <title>Sony Nano Cell 65 inç 4K TV</title>
-    <link>https://example-store.com/p/9690001615476</link>
-    <g:price>71816 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001615476/500/500</g:image_link>
-    <g:brand>Sony</g:brand>
-    <g:gtin>9690001615476</g:gtin>
-    <g:mpn>SON-1204</g:mpn>
-    <g:product_type>Elektronik &gt; TV &amp; Ses &gt; Televizyon</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:ekran>65inch</g:ekran>
-  </item>
-  <item>
-    <g:id>9690001655071</g:id>
-    <title>Avon EDP Kadın Parfüm 100ml</title>
-    <link>https://example-store.com/p/9690001655071</link>
-    <g:price>2985 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001655071/500/500</g:image_link>
-    <g:brand>Avon</g:brand>
-    <g:gtin>9690001655071</g:gtin>
-    <g:mpn>AVO-1209</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>100ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001662990</g:id>
-    <title>Clinique EDP Kadın Parfüm 100ml</title>
-    <link>https://example-store.com/p/9690001662990</link>
-    <g:price>584 TRY</g:price>
-    <g:sale_price>584 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001662990/500/500</g:image_link>
-    <g:brand>Clinique</g:brand>
-    <g:gtin>9690001662990</g:gtin>
-    <g:mpn>CLI-1210</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>100ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001678828</g:id>
-    <title>Maybelline Erkek Parfüm EDT 100ml</title>
-    <link>https://example-store.com/p/9690001678828</link>
-    <g:price>1874 TRY</g:price>
-    <g:sale_price>1874 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001678828/500/500</g:image_link>
-    <g:brand>Maybelline</g:brand>
-    <g:gtin>9690001678828</g:gtin>
-    <g:mpn>MAY-1212</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>100ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001686747</g:id>
-    <title>Nivea Erkek Parfüm EDT 100ml</title>
-    <link>https://example-store.com/p/9690001686747</link>
-    <g:price>1048 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001686747/500/500</g:image_link>
-    <g:brand>Nivea</g:brand>
-    <g:gtin>9690001686747</g:gtin>
-    <g:mpn>NIV-1213</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>100ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001702585</g:id>
-    <title>Avon Erkek Parfüm EDT 100ml</title>
-    <link>https://example-store.com/p/9690001702585</link>
-    <g:price>3449 TRY</g:price>
-    <g:sale_price>3449 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001702585/500/500</g:image_link>
-    <g:brand>Avon</g:brand>
-    <g:gtin>9690001702585</g:gtin>
-    <g:mpn>AVO-1215</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>100ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001710504</g:id>
-    <title>Clinique Erkek Parfüm EDT 100ml</title>
-    <link>https://example-store.com/p/9690001710504</link>
-    <g:price>3021 TRY</g:price>
-    <g:sale_price>3021 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001710504/500/500</g:image_link>
-    <g:brand>Clinique</g:brand>
-    <g:gtin>9690001710504</g:gtin>
-    <g:mpn>CLI-1216</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>100ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001718423</g:id>
-    <title>Loreal Nemlendirici Yüz Kremi 50ml</title>
-    <link>https://example-store.com/p/9690001718423</link>
-    <g:price>1389 TRY</g:price>
-    <g:sale_price>1389 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001718423/500/500</g:image_link>
-    <g:brand>Loreal</g:brand>
-    <g:gtin>9690001718423</g:gtin>
-    <g:mpn>LOR-1217</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>50ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001734261</g:id>
-    <title>Nivea Nemlendirici Yüz Kremi 50ml</title>
-    <link>https://example-store.com/p/9690001734261</link>
-    <g:price>2398 TRY</g:price>
-    <g:sale_price>2398 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001734261/500/500</g:image_link>
-    <g:brand>Nivea</g:brand>
-    <g:gtin>9690001734261</g:gtin>
-    <g:mpn>NIV-1219</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>50ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001750099</g:id>
-    <title>Avon Nemlendirici Yüz Kremi 50ml</title>
-    <link>https://example-store.com/p/9690001750099</link>
-    <g:price>797 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001750099/500/500</g:image_link>
-    <g:brand>Avon</g:brand>
-    <g:gtin>9690001750099</g:gtin>
-    <g:mpn>AVO-1221</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>50ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001765937</g:id>
-    <title>Loreal Maskara Suya Dayanıklı</title>
-    <link>https://example-store.com/p/9690001765937</link>
-    <g:price>891 TRY</g:price>
-    <g:sale_price>891 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001765937/500/500</g:image_link>
-    <g:brand>Loreal</g:brand>
-    <g:gtin>9690001765937</g:gtin>
-    <g:mpn>LOR-1223</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690001781775</g:id>
-    <title>Nivea Maskara Suya Dayanıklı</title>
-    <link>https://example-store.com/p/9690001781775</link>
-    <g:price>2915 TRY</g:price>
-    <g:sale_price>2915 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001781775/500/500</g:image_link>
-    <g:brand>Nivea</g:brand>
-    <g:gtin>9690001781775</g:gtin>
-    <g:mpn>NIV-1225</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690001789694</g:id>
-    <title>Garnier Maskara Suya Dayanıklı</title>
-    <link>https://example-store.com/p/9690001789694</link>
-    <g:price>2962 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001789694/500/500</g:image_link>
-    <g:brand>Garnier</g:brand>
-    <g:gtin>9690001789694</g:gtin>
-    <g:mpn>GAR-1226</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690001805532</g:id>
-    <title>Clinique Maskara Suya Dayanıklı</title>
-    <link>https://example-store.com/p/9690001805532</link>
-    <g:price>2016 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001805532/500/500</g:image_link>
-    <g:brand>Clinique</g:brand>
-    <g:gtin>9690001805532</g:gtin>
-    <g:mpn>CLI-1228</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690001813451</g:id>
-    <title>Loreal Ruj Mat Bitiş</title>
-    <link>https://example-store.com/p/9690001813451</link>
-    <g:price>4212 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001813451/500/500</g:image_link>
-    <g:brand>Loreal</g:brand>
-    <g:gtin>9690001813451</g:gtin>
-    <g:mpn>LOR-1229</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690001837208</g:id>
-    <title>Garnier Ruj Mat Bitiş</title>
-    <link>https://example-store.com/p/9690001837208</link>
-    <g:price>1837 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001837208/500/500</g:image_link>
-    <g:brand>Garnier</g:brand>
-    <g:gtin>9690001837208</g:gtin>
-    <g:mpn>GAR-1232</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>out of stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690001845127</g:id>
-    <title>Avon Ruj Mat Bitiş</title>
-    <link>https://example-store.com/p/9690001845127</link>
-    <g:price>3191 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001845127/500/500</g:image_link>
-    <g:brand>Avon</g:brand>
-    <g:gtin>9690001845127</g:gtin>
-    <g:mpn>AVO-1233</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690001853046</g:id>
-    <title>Clinique Ruj Mat Bitiş</title>
-    <link>https://example-store.com/p/9690001853046</link>
-    <g:price>596 TRY</g:price>
-    <g:sale_price>596 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001853046/500/500</g:image_link>
-    <g:brand>Clinique</g:brand>
-    <g:gtin>9690001853046</g:gtin>
-    <g:mpn>CLI-1234</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690001860965</g:id>
-    <title>Loreal Güneş Kremi SPF 50 200ml</title>
-    <link>https://example-store.com/p/9690001860965</link>
-    <g:price>873 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001860965/500/500</g:image_link>
-    <g:brand>Loreal</g:brand>
-    <g:gtin>9690001860965</g:gtin>
-    <g:mpn>LOR-1235</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:spf>50</g:spf>
-    <g:hacim>200ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001868884</g:id>
-    <title>Maybelline Güneş Kremi SPF 50 200ml</title>
-    <link>https://example-store.com/p/9690001868884</link>
-    <g:price>1457 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001868884/500/500</g:image_link>
-    <g:brand>Maybelline</g:brand>
-    <g:gtin>9690001868884</g:gtin>
-    <g:mpn>MAY-1236</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:spf>50</g:spf>
-    <g:hacim>200ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001908479</g:id>
-    <title>Loreal Saç Bakım Şampuanı 400ml</title>
-    <link>https://example-store.com/p/9690001908479</link>
-    <g:price>3913 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001908479/500/500</g:image_link>
-    <g:brand>Loreal</g:brand>
-    <g:gtin>9690001908479</g:gtin>
-    <g:mpn>LOR-1241</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>400ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001924317</g:id>
-    <title>Nivea Saç Bakım Şampuanı 400ml</title>
-    <link>https://example-store.com/p/9690001924317</link>
-    <g:price>2659 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001924317/500/500</g:image_link>
-    <g:brand>Nivea</g:brand>
-    <g:gtin>9690001924317</g:gtin>
-    <g:mpn>NIV-1243</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>400ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001932236</g:id>
-    <title>Garnier Saç Bakım Şampuanı 400ml</title>
-    <link>https://example-store.com/p/9690001932236</link>
-    <g:price>3476 TRY</g:price>
-    <g:sale_price>3476 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001932236/500/500</g:image_link>
-    <g:brand>Garnier</g:brand>
-    <g:gtin>9690001932236</g:gtin>
-    <g:mpn>GAR-1244</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>400ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001940155</g:id>
-    <title>Avon Saç Bakım Şampuanı 400ml</title>
-    <link>https://example-store.com/p/9690001940155</link>
-    <g:price>4483 TRY</g:price>
-    <g:sale_price>4483 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001940155/500/500</g:image_link>
-    <g:brand>Avon</g:brand>
-    <g:gtin>9690001940155</g:gtin>
-    <g:mpn>AVO-1245</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>400ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001955993</g:id>
-    <title>Loreal Yüz Temizleme Jeli 150ml</title>
-    <link>https://example-store.com/p/9690001955993</link>
-    <g:price>390 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001955993/500/500</g:image_link>
-    <g:brand>Loreal</g:brand>
-    <g:gtin>9690001955993</g:gtin>
-    <g:mpn>LOR-1247</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>150ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001963912</g:id>
-    <title>Maybelline Yüz Temizleme Jeli 150ml</title>
-    <link>https://example-store.com/p/9690001963912</link>
-    <g:price>1343 TRY</g:price>
-    <g:sale_price>1343 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001963912/500/500</g:image_link>
-    <g:brand>Maybelline</g:brand>
-    <g:gtin>9690001963912</g:gtin>
-    <g:mpn>MAY-1248</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>150ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001971831</g:id>
-    <title>Nivea Yüz Temizleme Jeli 150ml</title>
-    <link>https://example-store.com/p/9690001971831</link>
-    <g:price>1008 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001971831/500/500</g:image_link>
-    <g:brand>Nivea</g:brand>
-    <g:gtin>9690001971831</g:gtin>
-    <g:mpn>NIV-1249</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>150ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001979750</g:id>
-    <title>Garnier Yüz Temizleme Jeli 150ml</title>
-    <link>https://example-store.com/p/9690001979750</link>
-    <g:price>3013 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690001979750/500/500</g:image_link>
-    <g:brand>Garnier</g:brand>
-    <g:gtin>9690001979750</g:gtin>
-    <g:mpn>GAR-1250</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>150ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690001995588</g:id>
-    <title>Clinique Yüz Temizleme Jeli 150ml</title>
-    <link>https://example-store.com/p/9690001995588</link>
-    <g:price>3944 TRY</g:price>
-    <g:sale_price>3944 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690001995588/500/500</g:image_link>
-    <g:brand>Clinique</g:brand>
-    <g:gtin>9690001995588</g:gtin>
-    <g:mpn>CLI-1252</g:mpn>
-    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:hacim>150ml</g:hacim>
-  </item>
-  <item>
-    <g:id>9690002011426</g:id>
-    <title>Barbie City İtfaiye Seti 500 Parça</title>
-    <link>https://example-store.com/p/9690002011426</link>
-    <g:price>3469 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002011426/500/500</g:image_link>
-    <g:brand>Barbie</g:brand>
-    <g:gtin>9690002011426</g:gtin>
-    <g:mpn>BAR-1254</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>out of stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002027264</g:id>
-    <title>Pırıl City İtfaiye Seti 500 Parça</title>
-    <link>https://example-store.com/p/9690002027264</link>
-    <g:price>3669 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002027264/500/500</g:image_link>
-    <g:brand>Pırıl</g:brand>
-    <g:gtin>9690002027264</g:gtin>
-    <g:mpn>PIR-1256</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002035183</g:id>
-    <title>Fisher Price City İtfaiye Seti 500 Parça</title>
-    <link>https://example-store.com/p/9690002035183</link>
-    <g:price>6945 TRY</g:price>
-    <g:sale_price>6945 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002035183/500/500</g:image_link>
-    <g:brand>Fisher Price</g:brand>
-    <g:gtin>9690002035183</g:gtin>
-    <g:mpn>FIS-1257</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002043102</g:id>
-    <title>Nerf City İtfaiye Seti 500 Parça</title>
-    <link>https://example-store.com/p/9690002043102</link>
-    <g:price>1074 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002043102/500/500</g:image_link>
-    <g:brand>Nerf</g:brand>
-    <g:gtin>9690002043102</g:gtin>
-    <g:mpn>NER-1258</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002051021</g:id>
-    <title>Lego Dreamhouse Oyun Seti</title>
-    <link>https://example-store.com/p/9690002051021</link>
-    <g:price>1089 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002051021/500/500</g:image_link>
-    <g:brand>Lego</g:brand>
-    <g:gtin>9690002051021</g:gtin>
-    <g:mpn>LEG-1259</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002074778</g:id>
-    <title>Pırıl Dreamhouse Oyun Seti</title>
-    <link>https://example-store.com/p/9690002074778</link>
-    <g:price>4229 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002074778/500/500</g:image_link>
-    <g:brand>Pırıl</g:brand>
-    <g:gtin>9690002074778</g:gtin>
-    <g:mpn>PIR-1262</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002082697</g:id>
-    <title>Fisher Price Dreamhouse Oyun Seti</title>
-    <link>https://example-store.com/p/9690002082697</link>
-    <g:price>153 TRY</g:price>
-    <g:sale_price>153 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002082697/500/500</g:image_link>
-    <g:brand>Fisher Price</g:brand>
-    <g:gtin>9690002082697</g:gtin>
-    <g:mpn>FIS-1263</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002106454</g:id>
-    <title>Barbie 10'lu Araba Seti</title>
-    <link>https://example-store.com/p/9690002106454</link>
-    <g:price>5390 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002106454/500/500</g:image_link>
-    <g:brand>Barbie</g:brand>
-    <g:gtin>9690002106454</g:gtin>
-    <g:mpn>BAR-1266</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002114373</g:id>
-    <title>Hot Wheels 10'lu Araba Seti</title>
-    <link>https://example-store.com/p/9690002114373</link>
-    <g:price>1464 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002114373/500/500</g:image_link>
-    <g:brand>Hot Wheels</g:brand>
-    <g:gtin>9690002114373</g:gtin>
-    <g:mpn>HOT-1267</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>out of stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002138130</g:id>
-    <title>Nerf 10'lu Araba Seti</title>
-    <link>https://example-store.com/p/9690002138130</link>
-    <g:price>1288 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002138130/500/500</g:image_link>
-    <g:brand>Nerf</g:brand>
-    <g:gtin>9690002138130</g:gtin>
-    <g:mpn>NER-1270</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002153968</g:id>
-    <title>Barbie Eğitici Aktivite Küpü</title>
-    <link>https://example-store.com/p/9690002153968</link>
-    <g:price>1207 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002153968/500/500</g:image_link>
-    <g:brand>Barbie</g:brand>
-    <g:gtin>9690002153968</g:gtin>
-    <g:mpn>BAR-1272</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002177725</g:id>
-    <title>Fisher Price Eğitici Aktivite Küpü</title>
-    <link>https://example-store.com/p/9690002177725</link>
-    <g:price>4044 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002177725/500/500</g:image_link>
-    <g:brand>Fisher Price</g:brand>
-    <g:gtin>9690002177725</g:gtin>
-    <g:mpn>FIS-1275</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002201482</g:id>
-    <title>Barbie Su Tabancası Mega</title>
-    <link>https://example-store.com/p/9690002201482</link>
-    <g:price>6161 TRY</g:price>
-    <g:sale_price>6161 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002201482/500/500</g:image_link>
-    <g:brand>Barbie</g:brand>
-    <g:gtin>9690002201482</g:gtin>
-    <g:mpn>BAR-1278</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002225239</g:id>
-    <title>Fisher Price Su Tabancası Mega</title>
-    <link>https://example-store.com/p/9690002225239</link>
-    <g:price>4052 TRY</g:price>
-    <g:sale_price>4052 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002225239/500/500</g:image_link>
-    <g:brand>Fisher Price</g:brand>
-    <g:gtin>9690002225239</g:gtin>
-    <g:mpn>FIS-1281</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002248996</g:id>
-    <title>Barbie Teknik Yarış Arabası Seti</title>
-    <link>https://example-store.com/p/9690002248996</link>
-    <g:price>4793 TRY</g:price>
-    <g:sale_price>4793 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002248996/500/500</g:image_link>
-    <g:brand>Barbie</g:brand>
-    <g:gtin>9690002248996</g:gtin>
-    <g:mpn>BAR-1284</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002256915</g:id>
-    <title>Hot Wheels Teknik Yarış Arabası Seti</title>
-    <link>https://example-store.com/p/9690002256915</link>
-    <g:price>4729 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002256915/500/500</g:image_link>
-    <g:brand>Hot Wheels</g:brand>
-    <g:gtin>9690002256915</g:gtin>
-    <g:mpn>HOT-1285</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002272753</g:id>
-    <title>Fisher Price Teknik Yarış Arabası Seti</title>
-    <link>https://example-store.com/p/9690002272753</link>
-    <g:price>4666 TRY</g:price>
-    <g:sale_price>4666 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002272753/500/500</g:image_link>
-    <g:brand>Fisher Price</g:brand>
-    <g:gtin>9690002272753</g:gtin>
-    <g:mpn>FIS-1287</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002280672</g:id>
-    <title>Nerf Teknik Yarış Arabası Seti</title>
-    <link>https://example-store.com/p/9690002280672</link>
-    <g:price>2615 TRY</g:price>
-    <g:sale_price>2615 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002280672/500/500</g:image_link>
-    <g:brand>Nerf</g:brand>
-    <g:gtin>9690002280672</g:gtin>
-    <g:mpn>NER-1288</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002312348</g:id>
-    <title>Pırıl Peluş Ayı 60 cm</title>
-    <link>https://example-store.com/p/9690002312348</link>
-    <g:price>1497 TRY</g:price>
-    <g:sale_price>1497 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002312348/500/500</g:image_link>
-    <g:brand>Pırıl</g:brand>
-    <g:gtin>9690002312348</g:gtin>
-    <g:mpn>PIR-1292</g:mpn>
-    <g:product_type>Anne &amp; Bebek &gt; Oyuncak</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002336105</g:id>
-    <title>Nike Erkek Spor Ayakkabı</title>
-    <link>https://example-store.com/p/9690002336105</link>
-    <g:price>631 TRY</g:price>
-    <g:sale_price>631 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002336105/500/500</g:image_link>
-    <g:brand>Nike</g:brand>
-    <g:gtin>9690002336105</g:gtin>
-    <g:mpn>NIK-1295</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Siyah</g:color>
-  </item>
-  <item>
-    <g:id>9690002359862</g:id>
-    <title>Koton Erkek Spor Ayakkabı</title>
-    <link>https://example-store.com/p/9690002359862</link>
-    <g:price>1404 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002359862/500/500</g:image_link>
-    <g:brand>Koton</g:brand>
-    <g:gtin>9690002359862</g:gtin>
-    <g:mpn>KOT-1298</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Siyah</g:color>
-  </item>
-  <item>
-    <g:id>9690002367781</g:id>
-    <title>LC Waikiki Erkek Spor Ayakkabı</title>
-    <link>https://example-store.com/p/9690002367781</link>
-    <g:price>1403 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002367781/500/500</g:image_link>
-    <g:brand>LC Waikiki</g:brand>
-    <g:gtin>9690002367781</g:gtin>
-    <g:mpn>LC -1299</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Siyah</g:color>
-  </item>
-  <item>
-    <g:id>9690002383619</g:id>
-    <title>Nike Kadın Koşu Ayakkabısı</title>
-    <link>https://example-store.com/p/9690002383619</link>
-    <g:price>526 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002383619/500/500</g:image_link>
-    <g:brand>Nike</g:brand>
-    <g:gtin>9690002383619</g:gtin>
-    <g:mpn>NIK-1301</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Beyaz</g:color>
-  </item>
-  <item>
-    <g:id>9690002407376</g:id>
-    <title>Koton Kadın Koşu Ayakkabısı</title>
-    <link>https://example-store.com/p/9690002407376</link>
-    <g:price>1223 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002407376/500/500</g:image_link>
-    <g:brand>Koton</g:brand>
-    <g:gtin>9690002407376</g:gtin>
-    <g:mpn>KOT-1304</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Beyaz</g:color>
-  </item>
-  <item>
-    <g:id>9690002423214</g:id>
-    <title>Puma Kadın Koşu Ayakkabısı</title>
-    <link>https://example-store.com/p/9690002423214</link>
-    <g:price>4661 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002423214/500/500</g:image_link>
-    <g:brand>Puma</g:brand>
-    <g:gtin>9690002423214</g:gtin>
-    <g:mpn>PUM-1306</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Beyaz</g:color>
-  </item>
-  <item>
-    <g:id>9690002446971</g:id>
-    <title>Mavi Slim Fit Kot Pantolon</title>
-    <link>https://example-store.com/p/9690002446971</link>
-    <g:price>4534 TRY</g:price>
-    <g:sale_price>4534 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002446971/500/500</g:image_link>
-    <g:brand>Mavi</g:brand>
-    <g:gtin>9690002446971</g:gtin>
-    <g:mpn>MAV-1309</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Mavi</g:color>
-  </item>
-  <item>
-    <g:id>9690002462809</g:id>
-    <title>LC Waikiki Slim Fit Kot Pantolon</title>
-    <link>https://example-store.com/p/9690002462809</link>
-    <g:price>2890 TRY</g:price>
-    <g:sale_price>2890 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002462809/500/500</g:image_link>
-    <g:brand>LC Waikiki</g:brand>
-    <g:gtin>9690002462809</g:gtin>
-    <g:mpn>LC -1311</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Mavi</g:color>
-  </item>
-  <item>
-    <g:id>9690002470728</g:id>
-    <title>Puma Slim Fit Kot Pantolon</title>
-    <link>https://example-store.com/p/9690002470728</link>
-    <g:price>7484 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002470728/500/500</g:image_link>
-    <g:brand>Puma</g:brand>
-    <g:gtin>9690002470728</g:gtin>
-    <g:mpn>PUM-1312</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Mavi</g:color>
-  </item>
-  <item>
-    <g:id>9690002486566</g:id>
-    <title>Adidas Oversize Sweatshirt</title>
-    <link>https://example-store.com/p/9690002486566</link>
-    <g:price>3736 TRY</g:price>
-    <g:sale_price>3736 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002486566/500/500</g:image_link>
-    <g:brand>Adidas</g:brand>
-    <g:gtin>9690002486566</g:gtin>
-    <g:mpn>ADI-1314</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Gri</g:color>
-  </item>
-  <item>
-    <g:id>9690002502404</g:id>
-    <title>Koton Oversize Sweatshirt</title>
-    <link>https://example-store.com/p/9690002502404</link>
-    <g:price>3504 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002502404/500/500</g:image_link>
-    <g:brand>Koton</g:brand>
-    <g:gtin>9690002502404</g:gtin>
-    <g:mpn>KOT-1316</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Gri</g:color>
-  </item>
-  <item>
-    <g:id>9690002518242</g:id>
-    <title>Puma Oversize Sweatshirt</title>
-    <link>https://example-store.com/p/9690002518242</link>
-    <g:price>4261 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002518242/500/500</g:image_link>
-    <g:brand>Puma</g:brand>
-    <g:gtin>9690002518242</g:gtin>
-    <g:mpn>PUM-1318</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Gri</g:color>
-  </item>
-  <item>
-    <g:id>9690002526161</g:id>
-    <title>Nike Basic Tişört 3'lü Paket</title>
-    <link>https://example-store.com/p/9690002526161</link>
-    <g:price>5140 TRY</g:price>
-    <g:sale_price>5140 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002526161/500/500</g:image_link>
-    <g:brand>Nike</g:brand>
-    <g:gtin>9690002526161</g:gtin>
-    <g:mpn>NIK-1319</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>out of stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002534080</g:id>
-    <title>Adidas Basic Tişört 3'lü Paket</title>
-    <link>https://example-store.com/p/9690002534080</link>
-    <g:price>5336 TRY</g:price>
-    <g:sale_price>5336 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002534080/500/500</g:image_link>
-    <g:brand>Adidas</g:brand>
-    <g:gtin>9690002534080</g:gtin>
-    <g:mpn>ADI-1320</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002549918</g:id>
-    <title>Koton Basic Tişört 3'lü Paket</title>
-    <link>https://example-store.com/p/9690002549918</link>
-    <g:price>2770 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002549918/500/500</g:image_link>
-    <g:brand>Koton</g:brand>
-    <g:gtin>9690002549918</g:gtin>
-    <g:mpn>KOT-1322</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002573675</g:id>
-    <title>Nike Şişme Mont Su Geçirmez</title>
-    <link>https://example-store.com/p/9690002573675</link>
-    <g:price>3023 TRY</g:price>
-    <g:sale_price>3023 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002573675/500/500</g:image_link>
-    <g:brand>Nike</g:brand>
-    <g:gtin>9690002573675</g:gtin>
-    <g:mpn>NIK-1325</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Lacivert</g:color>
-  </item>
-  <item>
-    <g:id>9690002581594</g:id>
-    <title>Adidas Şişme Mont Su Geçirmez</title>
-    <link>https://example-store.com/p/9690002581594</link>
-    <g:price>5422 TRY</g:price>
-    <g:sale_price>5422 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002581594/500/500</g:image_link>
-    <g:brand>Adidas</g:brand>
-    <g:gtin>9690002581594</g:gtin>
-    <g:mpn>ADI-1326</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-    <g:color>Lacivert</g:color>
-  </item>
-  <item>
-    <g:id>9690002597432</g:id>
-    <title>Koton Şişme Mont Su Geçirmez</title>
-    <link>https://example-store.com/p/9690002597432</link>
-    <g:price>1373 TRY</g:price>
-    <g:sale_price>1373 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002597432/500/500</g:image_link>
-    <g:brand>Koton</g:brand>
-    <g:gtin>9690002597432</g:gtin>
-    <g:mpn>KOT-1328</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>out of stock</g:availability>
-    <g:color>Lacivert</g:color>
-  </item>
-  <item>
-    <g:id>9690002629108</g:id>
-    <title>Adidas Spor Eşofman Takımı</title>
-    <link>https://example-store.com/p/9690002629108</link>
-    <g:price>2049 TRY</g:price>
-    <g:sale_price>2049 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002629108/500/500</g:image_link>
-    <g:brand>Adidas</g:brand>
-    <g:gtin>9690002629108</g:gtin>
-    <g:mpn>ADI-1332</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002660784</g:id>
-    <title>Puma Spor Eşofman Takımı</title>
-    <link>https://example-store.com/p/9690002660784</link>
-    <g:price>1550 TRY</g:price>
-    <g:sale_price>1550 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002660784/500/500</g:image_link>
-    <g:brand>Puma</g:brand>
-    <g:gtin>9690002660784</g:gtin>
-    <g:mpn>PUM-1336</g:mpn>
-    <g:product_type>Moda &gt; Giyim</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002668703</g:id>
-    <title>Arzum Robot Süpürge Haritalı</title>
-    <link>https://example-store.com/p/9690002668703</link>
-    <g:price>3795 TRY</g:price>
-    <g:sale_price>3795 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002668703/500/500</g:image_link>
-    <g:brand>Arzum</g:brand>
-    <g:gtin>9690002668703</g:gtin>
-    <g:mpn>ARZ-1337</g:mpn>
+    <g:gtin>8690000007536</g:gtin>
+    <g:mpn>VES-1055</g:mpn>
+    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:availability>in stock</g:availability>
+  </item>
+  <item>
+    <g:id>8690000007673</g:id>
+    <title>Bosch SMS4HVI33E Bulaşık Makinesi</title>
+    <link>https://example-store.com/p/8690000007673</link>
+    <g:price>23280 TRY</g:price>
+    <g:sale_price>21320 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/dishwasher?lock=56</g:image_link>
+    <g:brand>Bosch</g:brand>
+    <g:gtin>8690000007673</g:gtin>
+    <g:mpn>BOS-1056</g:mpn>
+    <g:product_type>Ev &amp; Yaşam &gt; Beyaz Eşya</g:product_type>
+    <g:availability>in stock</g:availability>
+  </item>
+  <item>
+    <g:id>8690000007810</g:id>
+    <title>Dyson V12 Detect Slim Dikey Süpürge</title>
+    <link>https://example-store.com/p/8690000007810</link>
+    <g:price>23570 TRY</g:price>
+    <g:sale_price>19580 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/vacuum%20cleaner?lock=57</g:image_link>
+    <g:brand>Dyson</g:brand>
+    <g:gtin>8690000007810</g:gtin>
+    <g:mpn>DYS-1057</g:mpn>
     <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002676622</g:id>
-    <title>Fakir Robot Süpürge Haritalı</title>
-    <link>https://example-store.com/p/9690002676622</link>
-    <g:price>9447 TRY</g:price>
-    <g:sale_price>9447 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002676622/500/500</g:image_link>
-    <g:brand>Fakir</g:brand>
-    <g:gtin>9690002676622</g:gtin>
-    <g:mpn>FAK-1338</g:mpn>
+    <g:id>8690000007947</g:id>
+    <title>Xiaomi Robot Vacuum S10 Robot Süpürge</title>
+    <link>https://example-store.com/p/8690000007947</link>
+    <g:price>9740 TRY</g:price>
+    <g:sale_price>8080 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/robot%20vacuum?lock=58</g:image_link>
+    <g:brand>Xiaomi</g:brand>
+    <g:gtin>8690000007947</g:gtin>
+    <g:mpn>XIA-1058</g:mpn>
     <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002684541</g:id>
-    <title>Philips Robot Süpürge Haritalı</title>
-    <link>https://example-store.com/p/9690002684541</link>
-    <g:price>9275 TRY</g:price>
-    <g:sale_price>9275 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002684541/500/500</g:image_link>
+    <g:id>8690000008084</g:id>
+    <title>Philips Airfryer XXL HD9650 Sıcak Hava Fritözü</title>
+    <link>https://example-store.com/p/8690000008084</link>
+    <g:price>7610 TRY</g:price>
+    <g:sale_price>6810 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/air%20fryer?lock=59</g:image_link>
     <g:brand>Philips</g:brand>
-    <g:gtin>9690002684541</g:gtin>
-    <g:mpn>PHI-1339</g:mpn>
+    <g:gtin>8690000008084</g:gtin>
+    <g:mpn>PHI-1059</g:mpn>
     <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002692460</g:id>
-    <title>Karaca Robot Süpürge Haritalı</title>
-    <link>https://example-store.com/p/9690002692460</link>
-    <g:price>1234 TRY</g:price>
-    <g:sale_price>1234 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002692460/500/500</g:image_link>
-    <g:brand>Karaca</g:brand>
-    <g:gtin>9690002692460</g:gtin>
-    <g:mpn>KAR-1340</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002700379</g:id>
-    <title>Tefal Robot Süpürge Haritalı</title>
-    <link>https://example-store.com/p/9690002700379</link>
-    <g:price>968 TRY</g:price>
-    <g:sale_price>968 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002700379/500/500</g:image_link>
+    <g:id>8690000008221</g:id>
+    <title>Tefal Easy Fry Airfryer</title>
+    <link>https://example-store.com/p/8690000008221</link>
+    <g:price>3870 TRY</g:price>
+    <g:sale_price>3620 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/air%20fryer?lock=60</g:image_link>
     <g:brand>Tefal</g:brand>
-    <g:gtin>9690002700379</g:gtin>
-    <g:mpn>TEF-1341</g:mpn>
+    <g:gtin>8690000008221</g:gtin>
+    <g:mpn>TEF-1060</g:mpn>
     <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002708298</g:id>
-    <title>Goldmaster Robot Süpürge Haritalı</title>
-    <link>https://example-store.com/p/9690002708298</link>
-    <g:price>4858 TRY</g:price>
+    <g:id>8690000008358</g:id>
+    <title>Karaca Hatır Mod Çay Makinesi</title>
+    <link>https://example-store.com/p/8690000008358</link>
+    <g:price>2440 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690002708298/500/500</g:image_link>
-    <g:brand>Goldmaster</g:brand>
-    <g:gtin>9690002708298</g:gtin>
-    <g:mpn>GOL-1342</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002724136</g:id>
-    <title>Fakir Espresso Kahve Makinesi</title>
-    <link>https://example-store.com/p/9690002724136</link>
-    <g:price>4277 TRY</g:price>
-    <g:sale_price>4277 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002724136/500/500</g:image_link>
-    <g:brand>Fakir</g:brand>
-    <g:gtin>9690002724136</g:gtin>
-    <g:mpn>FAK-1344</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002739974</g:id>
-    <title>Karaca Espresso Kahve Makinesi</title>
-    <link>https://example-store.com/p/9690002739974</link>
-    <g:price>2454 TRY</g:price>
-    <g:sale_price>2454 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002739974/500/500</g:image_link>
+    <g:image_link>https://loremflickr.com/600/600/tea%20maker?lock=61</g:image_link>
     <g:brand>Karaca</g:brand>
-    <g:gtin>9690002739974</g:gtin>
-    <g:mpn>KAR-1346</g:mpn>
+    <g:gtin>8690000008358</g:gtin>
+    <g:mpn>KAR-1061</g:mpn>
     <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002747893</g:id>
-    <title>Tefal Espresso Kahve Makinesi</title>
-    <link>https://example-store.com/p/9690002747893</link>
-    <g:price>11537 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002747893/500/500</g:image_link>
-    <g:brand>Tefal</g:brand>
-    <g:gtin>9690002747893</g:gtin>
-    <g:mpn>TEF-1347</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002755812</g:id>
-    <title>Goldmaster Espresso Kahve Makinesi</title>
-    <link>https://example-store.com/p/9690002755812</link>
-    <g:price>10242 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002755812/500/500</g:image_link>
-    <g:brand>Goldmaster</g:brand>
-    <g:gtin>9690002755812</g:gtin>
-    <g:mpn>GOL-1348</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002771650</g:id>
-    <title>Fakir Airfryer XL 7 Litre</title>
-    <link>https://example-store.com/p/9690002771650</link>
-    <g:price>12175 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002771650/500/500</g:image_link>
-    <g:brand>Fakir</g:brand>
-    <g:gtin>9690002771650</g:gtin>
-    <g:mpn>FAK-1350</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002779569</g:id>
-    <title>Philips Airfryer XL 7 Litre</title>
-    <link>https://example-store.com/p/9690002779569</link>
-    <g:price>8978 TRY</g:price>
-    <g:sale_price>8978 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002779569/500/500</g:image_link>
-    <g:brand>Philips</g:brand>
-    <g:gtin>9690002779569</g:gtin>
-    <g:mpn>PHI-1351</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002803326</g:id>
-    <title>Goldmaster Airfryer XL 7 Litre</title>
-    <link>https://example-store.com/p/9690002803326</link>
-    <g:price>1041 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002803326/500/500</g:image_link>
-    <g:brand>Goldmaster</g:brand>
-    <g:gtin>9690002803326</g:gtin>
-    <g:mpn>GOL-1354</g:mpn>
+    <g:id>8690000008632</g:id>
+    <title>Arzum AR3074 Blender Seti</title>
+    <link>https://example-store.com/p/8690000008632</link>
+    <g:price>1890 TRY</g:price>
+    <g:sale_price>1730 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/blender?lock=63</g:image_link>
+    <g:brand>Arzum</g:brand>
+    <g:gtin>8690000008632</g:gtin>
+    <g:mpn>ARZ-1063</g:mpn>
     <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
     <g:availability>out of stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002811245</g:id>
-    <title>Arzum Saç Kurutma Makinesi 2200W</title>
-    <link>https://example-store.com/p/9690002811245</link>
-    <g:price>832 TRY</g:price>
+    <g:id>8690000008906</g:id>
+    <title>Chanel Bleu de Chanel EDP 100ml</title>
+    <link>https://example-store.com/p/8690000008906</link>
+    <g:price>6440 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690002811245/500/500</g:image_link>
-    <g:brand>Arzum</g:brand>
-    <g:gtin>9690002811245</g:gtin>
-    <g:mpn>ARZ-1355</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
+    <g:image_link>https://loremflickr.com/600/600/perfume?lock=65</g:image_link>
+    <g:brand>Chanel</g:brand>
+    <g:gtin>8690000008906</g:gtin>
+    <g:mpn>CHA-1065</g:mpn>
+    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002827083</g:id>
-    <title>Philips Saç Kurutma Makinesi 2200W</title>
-    <link>https://example-store.com/p/9690002827083</link>
-    <g:price>6247 TRY</g:price>
-    <g:sale_price>6247 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002827083/500/500</g:image_link>
-    <g:brand>Philips</g:brand>
-    <g:gtin>9690002827083</g:gtin>
-    <g:mpn>PHI-1357</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
+    <g:id>8690000009180</g:id>
+    <title>Lancome La Vie Est Belle EDP 75ml</title>
+    <link>https://example-store.com/p/8690000009180</link>
+    <g:price>5170 TRY</g:price>
+
+    <g:image_link>https://loremflickr.com/600/600/perfume%20bottle?lock=67</g:image_link>
+    <g:brand>Lancome</g:brand>
+    <g:gtin>8690000009180</g:gtin>
+    <g:mpn>LAN-1067</g:mpn>
+    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002835002</g:id>
-    <title>Karaca Saç Kurutma Makinesi 2200W</title>
-    <link>https://example-store.com/p/9690002835002</link>
-    <g:price>7415 TRY</g:price>
-    <g:sale_price>7415 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002835002/500/500</g:image_link>
-    <g:brand>Karaca</g:brand>
-    <g:gtin>9690002835002</g:gtin>
-    <g:mpn>KAR-1358</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
+    <g:id>8690000009317</g:id>
+    <title>Yves Saint Laurent Black Opium EDP 90ml</title>
+    <link>https://example-store.com/p/8690000009317</link>
+    <g:price>5680 TRY</g:price>
+    <g:sale_price>4730 TRY</g:sale_price>
+    <g:image_link>https://loremflickr.com/600/600/perfume%20bottle?lock=68</g:image_link>
+    <g:brand>Yves Saint Laurent</g:brand>
+    <g:gtin>8690000009317</g:gtin>
+    <g:mpn>YVE-1068</g:mpn>
+    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002858759</g:id>
-    <title>Arzum Blender Set 1000W</title>
-    <link>https://example-store.com/p/9690002858759</link>
-    <g:price>2248 TRY</g:price>
+    <g:id>8690000009454</g:id>
+    <title>Nivea Q10 Yaşlanma Karşıtı Yüz Kremi 50ml</title>
+    <link>https://example-store.com/p/8690000009454</link>
+    <g:price>330 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690002858759/500/500</g:image_link>
-    <g:brand>Arzum</g:brand>
-    <g:gtin>9690002858759</g:gtin>
-    <g:mpn>ARZ-1361</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
+    <g:image_link>https://loremflickr.com/600/600/cosmetics%20cream?lock=69</g:image_link>
+    <g:brand>Nivea</g:brand>
+    <g:gtin>8690000009454</g:gtin>
+    <g:mpn>NIV-1069</g:mpn>
+    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002866678</g:id>
-    <title>Fakir Blender Set 1000W</title>
-    <link>https://example-store.com/p/9690002866678</link>
-    <g:price>5608 TRY</g:price>
-    <g:sale_price>5608 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002866678/500/500</g:image_link>
-    <g:brand>Fakir</g:brand>
-    <g:gtin>9690002866678</g:gtin>
-    <g:mpn>FAK-1362</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
+    <g:id>8690000009591</g:id>
+    <title>La Roche-Posay Anthelios SPF50+ Güneş Kremi 50ml</title>
+    <link>https://example-store.com/p/8690000009591</link>
+    <g:price>840 TRY</g:price>
+
+    <g:image_link>https://loremflickr.com/600/600/sunscreen?lock=70</g:image_link>
+    <g:brand>La Roche-Posay</g:brand>
+    <g:gtin>8690000009591</g:gtin>
+    <g:mpn>LAX-1070</g:mpn>
+    <g:product_type>Kozmetik &amp; Kişisel Bakım &gt; Parfüm</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002874597</g:id>
-    <title>Philips Blender Set 1000W</title>
-    <link>https://example-store.com/p/9690002874597</link>
-    <g:price>5968 TRY</g:price>
-    <g:sale_price>5968 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002874597/500/500</g:image_link>
-    <g:brand>Philips</g:brand>
-    <g:gtin>9690002874597</g:gtin>
-    <g:mpn>PHI-1363</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
+    <g:id>8690000009728</g:id>
+    <title>Nike Air Force 1 '07 Erkek Spor Ayakkabı</title>
+    <link>https://example-store.com/p/8690000009728</link>
+    <g:price>4670 TRY</g:price>
+
+    <g:image_link>https://loremflickr.com/600/600/sneakers?lock=71</g:image_link>
+    <g:brand>Nike</g:brand>
+    <g:gtin>8690000009728</g:gtin>
+    <g:mpn>NIK-1071</g:mpn>
+    <g:product_type>Moda &gt; Ayakkabı</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002882516</g:id>
-    <title>Karaca Blender Set 1000W</title>
-    <link>https://example-store.com/p/9690002882516</link>
-    <g:price>7029 TRY</g:price>
-    <g:sale_price>7029 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002882516/500/500</g:image_link>
-    <g:brand>Karaca</g:brand>
-    <g:gtin>9690002882516</g:gtin>
-    <g:mpn>KAR-1364</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
+    <g:id>8690000009865</g:id>
+    <title>Nike Air Max 270 Spor Ayakkabı</title>
+    <link>https://example-store.com/p/8690000009865</link>
+    <g:price>5650 TRY</g:price>
+
+    <g:image_link>https://loremflickr.com/600/600/sneakers?lock=72</g:image_link>
+    <g:brand>Nike</g:brand>
+    <g:gtin>8690000009865</g:gtin>
+    <g:mpn>NIK-1072</g:mpn>
+    <g:product_type>Moda &gt; Ayakkabı</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002906273</g:id>
-    <title>Arzum Ütü Buharlı 2600W</title>
-    <link>https://example-store.com/p/9690002906273</link>
-    <g:price>11034 TRY</g:price>
+    <g:id>8690000010002</g:id>
+    <title>Adidas Samba OG Spor Ayakkabı</title>
+    <link>https://example-store.com/p/8690000010002</link>
+    <g:price>4990 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690002906273/500/500</g:image_link>
-    <g:brand>Arzum</g:brand>
-    <g:gtin>9690002906273</g:gtin>
-    <g:mpn>ARZ-1367</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
+    <g:image_link>https://loremflickr.com/600/600/sneakers?lock=73</g:image_link>
+    <g:brand>Adidas</g:brand>
+    <g:gtin>8690000010002</g:gtin>
+    <g:mpn>ADI-1073</g:mpn>
+    <g:product_type>Moda &gt; Ayakkabı</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002922111</g:id>
-    <title>Philips Ütü Buharlı 2600W</title>
-    <link>https://example-store.com/p/9690002922111</link>
-    <g:price>3605 TRY</g:price>
-    <g:sale_price>3605 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002922111/500/500</g:image_link>
-    <g:brand>Philips</g:brand>
-    <g:gtin>9690002922111</g:gtin>
-    <g:mpn>PHI-1369</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
+    <g:id>8690000010139</g:id>
+    <title>Adidas Ultraboost Light Koşu Ayakkabısı</title>
+    <link>https://example-store.com/p/8690000010139</link>
+    <g:price>7350 TRY</g:price>
+
+    <g:image_link>https://loremflickr.com/600/600/running%20shoes?lock=74</g:image_link>
+    <g:brand>Adidas</g:brand>
+    <g:gtin>8690000010139</g:gtin>
+    <g:mpn>ADI-1074</g:mpn>
+    <g:product_type>Moda &gt; Ayakkabı</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002937949</g:id>
-    <title>Tefal Ütü Buharlı 2600W</title>
-    <link>https://example-store.com/p/9690002937949</link>
-    <g:price>2709 TRY</g:price>
+    <g:id>8690000010276</g:id>
+    <title>Puma Suede Classic XXI Spor Ayakkabı</title>
+    <link>https://example-store.com/p/8690000010276</link>
+    <g:price>3230 TRY</g:price>
 
-    <g:image_link>https://picsum.photos/seed/9690002937949/500/500</g:image_link>
-    <g:brand>Tefal</g:brand>
-    <g:gtin>9690002937949</g:gtin>
-    <g:mpn>TEF-1371</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
-    <g:availability>out of stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002953787</g:id>
-    <title>Arzum Su Isıtıcı Cam 1.7 Litre</title>
-    <link>https://example-store.com/p/9690002953787</link>
-    <g:price>1160 TRY</g:price>
-    <g:sale_price>1160 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002953787/500/500</g:image_link>
-    <g:brand>Arzum</g:brand>
-    <g:gtin>9690002953787</g:gtin>
-    <g:mpn>ARZ-1373</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
+    <g:image_link>https://loremflickr.com/600/600/sneakers?lock=75</g:image_link>
+    <g:brand>Puma</g:brand>
+    <g:gtin>8690000010276</g:gtin>
+    <g:mpn>PUM-1075</g:mpn>
+    <g:product_type>Moda &gt; Ayakkabı</g:product_type>
     <g:availability>in stock</g:availability>
-
   </item>
   <item>
-    <g:id>9690002961706</g:id>
-    <title>Fakir Su Isıtıcı Cam 1.7 Litre</title>
-    <link>https://example-store.com/p/9690002961706</link>
-    <g:price>5726 TRY</g:price>
-    <g:sale_price>5726 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002961706/500/500</g:image_link>
-    <g:brand>Fakir</g:brand>
-    <g:gtin>9690002961706</g:gtin>
-    <g:mpn>FAK-1374</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
+    <g:id>8690000010413</g:id>
+    <title>New Balance 574 Sneaker</title>
+    <link>https://example-store.com/p/8690000010413</link>
+    <g:price>3850 TRY</g:price>
+
+    <g:image_link>https://loremflickr.com/600/600/sneakers?lock=76</g:image_link>
+    <g:brand>New Balance</g:brand>
+    <g:gtin>8690000010413</g:gtin>
+    <g:mpn>NEW-1076</g:mpn>
+    <g:product_type>Moda &gt; Ayakkabı</g:product_type>
     <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002969625</g:id>
-    <title>Philips Su Isıtıcı Cam 1.7 Litre</title>
-    <link>https://example-store.com/p/9690002969625</link>
-    <g:price>9352 TRY</g:price>
-
-    <g:image_link>https://picsum.photos/seed/9690002969625/500/500</g:image_link>
-    <g:brand>Philips</g:brand>
-    <g:gtin>9690002969625</g:gtin>
-    <g:mpn>PHI-1375</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
-    <g:availability>out of stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002977544</g:id>
-    <title>Karaca Su Isıtıcı Cam 1.7 Litre</title>
-    <link>https://example-store.com/p/9690002977544</link>
-    <g:price>7145 TRY</g:price>
-    <g:sale_price>7145 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002977544/500/500</g:image_link>
-    <g:brand>Karaca</g:brand>
-    <g:gtin>9690002977544</g:gtin>
-    <g:mpn>KAR-1376</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
-    <g:availability>in stock</g:availability>
-
-  </item>
-  <item>
-    <g:id>9690002985463</g:id>
-    <title>Tefal Su Isıtıcı Cam 1.7 Litre</title>
-    <link>https://example-store.com/p/9690002985463</link>
-    <g:price>7852 TRY</g:price>
-    <g:sale_price>7852 TRY</g:sale_price>
-    <g:image_link>https://picsum.photos/seed/9690002985463/500/500</g:image_link>
-    <g:brand>Tefal</g:brand>
-    <g:gtin>9690002985463</g:gtin>
-    <g:mpn>TEF-1377</g:mpn>
-    <g:product_type>Ev &amp; Yaşam &gt; Küçük Ev Aletleri</g:product_type>
-    <g:availability>in stock</g:availability>
-
   </item>
 </channel>
 </rss>

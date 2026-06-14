@@ -13,12 +13,14 @@ export async function getTopDeals(limit = 12): Promise<ProductCardData[]> {
       lowestPrice: number | null;
       oldPrice: number | null;
       offerCount: number;
+      rating: number | null;
+      reviewCount: number;
     }[]
   >(Prisma.sql`
     SELECT p.slug, p.title, p."imageUrl", b.name AS "brandName",
            p."lowestPrice"::float8 AS "lowestPrice",
            o."oldPrice"::float8 AS "oldPrice",
-           p."offerCount"
+           p."offerCount", p.rating, p."reviewCount"
     FROM "Product" p
     JOIN "Offer" o ON o."productId" = p.id AND o.price = p."lowestPrice"
     LEFT JOIN "Brand" b ON b.id = p."brandId"
@@ -41,6 +43,8 @@ export async function getTrendingProducts(limit = 12): Promise<ProductCardData[]
       imageUrl: true,
       offerCount: true,
       lowestPrice: true,
+      rating: true,
+      reviewCount: true,
       brand: { select: { name: true } },
     },
   });
@@ -51,6 +55,8 @@ export async function getTrendingProducts(limit = 12): Promise<ProductCardData[]
     brandName: r.brand?.name ?? null,
     lowestPrice: r.lowestPrice ? Number(r.lowestPrice) : null,
     offerCount: r.offerCount,
+    rating: r.rating,
+    reviewCount: r.reviewCount,
   }));
 }
 
@@ -63,6 +69,34 @@ export async function getTopCategories(limit = 8) {
     select: { name: true, slug: true, iconKey: true },
   });
   return cats;
+}
+
+/** Ürünü olan yaprak kategoriler + temsili görsel + ürün sayısı (ana sayfa kartları). */
+export async function getCategoryTiles(limit = 12) {
+  const rows = await prisma.$queryRaw<
+    { name: string; slug: string; count: number; imageUrl: string | null }[]
+  >(Prisma.sql`
+    SELECT c.name, c.slug, COUNT(p.id)::int AS count,
+           (SELECT p2."imageUrl" FROM "Product" p2 WHERE p2."categoryId" = c.id AND p2."imageUrl" IS NOT NULL ORDER BY p2."offerCount" DESC LIMIT 1) AS "imageUrl"
+    FROM "Category" c
+    JOIN "Product" p ON p."categoryId" = c.id AND p."offerCount" > 0
+    GROUP BY c.id, c.name, c.slug
+    ORDER BY count DESC
+    LIMIT ${limit}
+  `);
+  return rows;
+}
+
+/** En çok ürünü olan markalar (marka şeridi). */
+export async function getTopBrands(limit = 12) {
+  const rows = await prisma.$queryRaw<{ name: string; slug: string; count: number }[]>(Prisma.sql`
+    SELECT b.name, b.slug, COUNT(p.id)::int AS count
+    FROM "Brand" b JOIN "Product" p ON p."brandId" = b.id AND p."offerCount" > 0
+    GROUP BY b.id, b.name, b.slug
+    ORDER BY count DESC
+    LIMIT ${limit}
+  `);
+  return rows;
 }
 
 /** Ürün detay verisi. */
@@ -111,6 +145,8 @@ export async function getSimilarProducts(
       imageUrl: true,
       offerCount: true,
       lowestPrice: true,
+      rating: true,
+      reviewCount: true,
       brand: { select: { name: true } },
     },
   });
@@ -121,5 +157,7 @@ export async function getSimilarProducts(
     brandName: r.brand?.name ?? null,
     lowestPrice: r.lowestPrice ? Number(r.lowestPrice) : null,
     offerCount: r.offerCount,
+    rating: r.rating,
+    reviewCount: r.reviewCount,
   }));
 }

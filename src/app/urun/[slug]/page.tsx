@@ -16,6 +16,7 @@ import { PriceHistoryChart } from "@/components/product/price-history-chart";
 import { ProductActions } from "@/components/product/product-actions";
 import { ProductGrid } from "@/components/product/product-grid";
 import { PriceDelta } from "@/components/product/price-delta";
+import { RatingStars } from "@/components/product/rating-stars";
 import { Badge } from "@/components/ui/badge";
 
 export const dynamic = "force-dynamic";
@@ -91,7 +92,7 @@ export default async function ProductPage({ params }: { params: { slug: string }
                 alt={product.title}
                 fill
                 sizes="420px"
-                className="object-contain p-6"
+                className="object-cover"
                 priority
               />
             ) : (
@@ -111,8 +112,23 @@ export default async function ProductPage({ params }: { params: { slug: string }
               </Link>
             )}
             <h1 className="mt-1 font-display text-2xl font-bold md:text-3xl">{product.title}</h1>
-            <p className="mt-1 text-sm text-[var(--muted)]">{offers.length} satıcıda mevcut</p>
+            <div className="mt-2 flex flex-wrap items-center gap-3">
+              <RatingStars rating={product.rating} reviewCount={product.reviewCount} size="md" />
+              <span className="text-sm text-[var(--muted)]">{offers.length} satıcıda mevcut</span>
+            </div>
           </div>
+
+          {/* Öne çıkan özellikler (epey tarzı özet) */}
+          {Object.keys(attrs).length > 0 && (
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+              {Object.entries(attrs).slice(0, 4).map(([k, v]) => (
+                <div key={k} className="rounded-lg border border-[var(--border)] bg-[var(--surface)] p-3">
+                  <div className="text-[11px] uppercase tracking-wide text-[var(--muted)]">{k}</div>
+                  <div className="mt-0.5 text-sm font-semibold text-ink">{v}</div>
+                </div>
+              ))}
+            </div>
+          )}
 
           {/* En iyi fiyat kartı */}
           {best && (

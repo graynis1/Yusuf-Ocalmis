@@ -1,6 +1,12 @@
 import Link from "next/link";
-import { TrendingDown, ArrowRight } from "lucide-react";
-import { getTopDeals, getTrendingProducts, getTopCategories } from "@/server/products";
+import Image from "next/image";
+import { TrendingDown, ArrowRight, ShieldCheck, Store, LineChart } from "lucide-react";
+import {
+  getTopDeals,
+  getTrendingProducts,
+  getCategoryTiles,
+  getTopBrands,
+} from "@/server/products";
 import { ProductCard } from "@/components/product/product-card";
 import { ProductGrid } from "@/components/product/product-grid";
 import { SearchBar } from "@/components/search/search-bar";
@@ -16,17 +22,18 @@ async function safe<T>(p: Promise<T>, fallback: T): Promise<T> {
 }
 
 export default async function HomePage() {
-  const [deals, trending, categories] = await Promise.all([
+  const [deals, trending, tiles, brands] = await Promise.all([
     safe(getTopDeals(12), []),
     safe(getTrendingProducts(10), []),
-    safe(getTopCategories(8), []),
+    safe(getCategoryTiles(10), []),
+    safe(getTopBrands(14), []),
   ]);
 
   return (
     <div>
-      {/* Kahraman: dev arama çubuğu */}
+      {/* Kahraman */}
       <section className="border-b border-[var(--border)] bg-gradient-to-b from-white to-[var(--surface)]">
-        <div className="container py-14 text-center md:py-20">
+        <div className="container py-12 text-center md:py-16">
           <h1 className="mx-auto max-w-2xl font-display text-3xl font-extrabold leading-tight md:text-5xl">
             Aradığın ürünü <span className="text-[var(--brand)]">en ucuza</span> bul
           </h1>
@@ -36,24 +43,42 @@ export default async function HomePage() {
           <div className="mx-auto mt-7 max-w-2xl">
             <SearchBar />
           </div>
-          {categories.length > 0 && (
-            <div className="mt-5 flex flex-wrap justify-center gap-2">
-              {categories.map((c) => (
-                <Link
-                  key={c.slug}
-                  href={`/kategori/${c.slug}`}
-                  className="rounded-full border border-[var(--border)] bg-white px-4 py-1.5 text-sm text-ink transition-colors hover:border-[var(--brand)] hover:text-[var(--brand)]"
-                >
-                  {c.name}
-                </Link>
-              ))}
-            </div>
-          )}
+          <div className="mt-5 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-[var(--muted)]">
+            <span className="flex items-center gap-1.5"><Store className="size-4 text-[var(--brand)]" /> 10+ mağaza</span>
+            <span className="flex items-center gap-1.5"><LineChart className="size-4 text-[var(--brand)]" /> Fiyat geçmişi</span>
+            <span className="flex items-center gap-1.5"><ShieldCheck className="size-4 text-[var(--brand)]" /> Tarafsız karşılaştırma</span>
+          </div>
         </div>
       </section>
 
+      {/* Kategoriler — görselli kartlar */}
+      {tiles.length > 0 && (
+        <section className="container py-10">
+          <h2 className="mb-5 font-display text-xl font-bold">Kategoriler</h2>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
+            {tiles.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/kategori/${c.slug}`}
+                className="group overflow-hidden rounded-lg border border-[var(--border)] bg-card transition-all hover:-translate-y-0.5 hover:border-[var(--brand)]/40 hover:shadow-md"
+              >
+                <div className="relative aspect-[4/3] bg-white">
+                  {c.imageUrl && (
+                    <Image src={c.imageUrl} alt={c.name} fill sizes="200px" className="object-cover transition-transform duration-300 group-hover:scale-105" />
+                  )}
+                </div>
+                <div className="p-3">
+                  <div className="text-sm font-semibold text-ink group-hover:text-[var(--brand)]">{c.name}</div>
+                  <div className="text-xs text-[var(--muted)]">{c.count} ürün</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Signature: günün en çok düşen fiyatları */}
-      <section className="container py-10">
+      <section className="container py-6">
         <div className="mb-5 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <TrendingDown className="size-5 text-[var(--save)]" />
@@ -71,23 +96,23 @@ export default async function HomePage() {
           </div>
         ) : (
           <p className="rounded-lg border border-dashed border-[var(--border)] p-8 text-center text-[var(--muted)]">
-            Katalog henüz hazırlanıyor. Veriler yüklendiğinde fırsatlar burada görünecek.
+            Katalog henüz hazırlanıyor.
           </p>
         )}
       </section>
 
-      {/* Popüler kategoriler */}
-      {categories.length > 0 && (
+      {/* Markalar şeridi */}
+      {brands.length > 0 && (
         <section className="container py-6">
-          <h2 className="mb-5 font-display text-xl font-bold">Popüler kategoriler</h2>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
-            {categories.map((c) => (
+          <h2 className="mb-4 font-display text-xl font-bold">Popüler markalar</h2>
+          <div className="flex flex-wrap gap-2">
+            {brands.map((b) => (
               <Link
-                key={c.slug}
-                href={`/kategori/${c.slug}`}
-                className="flex flex-col items-center gap-2 rounded-lg border border-[var(--border)] bg-card p-5 text-center transition-shadow hover:shadow-md"
+                key={b.slug}
+                href={`/marka/${b.slug}`}
+                className="rounded-full border border-[var(--border)] bg-white px-4 py-2 text-sm font-medium text-ink transition-colors hover:border-[var(--brand)] hover:text-[var(--brand)]"
               >
-                <span className="text-sm font-semibold">{c.name}</span>
+                {b.name} <span className="text-xs text-[var(--muted)]">({b.count})</span>
               </Link>
             ))}
           </div>
