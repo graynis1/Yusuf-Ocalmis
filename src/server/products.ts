@@ -91,6 +91,44 @@ export async function getCategoryTiles(limit = 12) {
   return rows;
 }
 
+/** Kategori başına ürün rafları (ana sayfa: "En iyi telefonlar" vb.). */
+export async function getCategoryRails(catCount = 4, perCat = 6) {
+  const cats = await prisma.$queryRaw<{ id: string; name: string; slug: string }[]>(Prisma.sql`
+    SELECT c.id, c.name, c.slug
+    FROM "Category" c
+    JOIN "Product" p ON p."categoryId" = c.id AND p."offerCount" > 0
+    GROUP BY c.id, c.name, c.slug
+    ORDER BY COUNT(p.id) DESC
+    LIMIT ${catCount}
+  `);
+  const rails = await Promise.all(
+    cats.map(async (c) => {
+      const rows = await prisma.product.findMany({
+        where: { categoryId: c.id, offerCount: { gt: 0 } },
+        orderBy: { reviewCount: "desc" },
+        take: perCat,
+        select: {
+          slug: true, title: true, imageUrl: true, offerCount: true, lowestPrice: true,
+          rating: true, reviewCount: true,
+          brand: { select: { name: true } },
+          category: { select: { slug: true } },
+        },
+      });
+      return {
+        name: c.name,
+        slug: c.slug,
+        products: rows.map((r) => ({
+          slug: r.slug, title: r.title, imageUrl: r.imageUrl,
+          brandName: r.brand?.name ?? null, categorySlug: r.category?.slug ?? null,
+          lowestPrice: r.lowestPrice ? Number(r.lowestPrice) : null,
+          offerCount: r.offerCount, rating: r.rating, reviewCount: r.reviewCount,
+        })),
+      };
+    })
+  );
+  return rails;
+}
+
 /** En çok ürünü olan markalar (marka şeridi). */
 export async function getTopBrands(limit = 12) {
   const rows = await prisma.$queryRaw<{ name: string; slug: string; count: number }[]>(Prisma.sql`
