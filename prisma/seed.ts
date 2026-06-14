@@ -5,31 +5,14 @@
  *
  * Çalıştır: npm run seed   (veya prod: DATABASE_URL=<prod> npm run seed)
  */
+import "./load-env"; // EN ÜSTTE: runner/prisma import'larından önce env yüklensin
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { PrismaClient, Prisma } from "@prisma/client";
 import bcrypt from "bcryptjs";
-
-// --- minimal .env yükleyici (tsx doğrudan çalışınca Prisma .env'i otomatik yüklemez) ---
-async function loadEnv() {
-  if (process.env.DATABASE_URL) return;
-  try {
-    const content = await fs.readFile(path.join(process.cwd(), ".env"), "utf-8");
-    for (const line of content.split("\n")) {
-      const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*)\s*$/i);
-      if (m && !process.env[m[1]]) {
-        process.env[m[1]] = m[2].replace(/^["']|["']$/g, "");
-      }
-    }
-  } catch {
-    /* .env yoksa env zaten dışarıdan gelmiştir */
-  }
-}
-
-await loadEnv();
+import { runFeed } from "../src/feeds/runner";
 
 const prisma = new PrismaClient();
-const { runFeed } = await import("../src/feeds/runner");
 
 function slugify(input: string): string {
   const map: Record<string, string> = {
@@ -229,7 +212,8 @@ async function seedUsers() {
 
 async function main() {
   console.log("🌱 FİYATBUL seed başlıyor…");
-  console.log("• Kategoriler"); await seedCategories(TAXONOMY, null, "");
+  console.log("• Kategoriler");
+  await seedCategories(TAXONOMY, null, "");
   console.log("• Markalar"); await seedBrands();
   console.log("• Sistem mağazaları + demo feed");
   const merchants = await seedSystemMerchants();
