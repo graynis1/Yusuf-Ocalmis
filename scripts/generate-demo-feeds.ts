@@ -34,18 +34,18 @@ function buildCatalog(): Built[] {
 }
 
 function itemXml(it: Built, priceFactor: number): string {
-  const price = Math.round((it.basePrice * priceFactor) / 10) * 10;
+  // güncel satış fiyatı (mağazaya göre ±%). İndirimliyse eski (üstü çizili) daha yüksek.
+  const current = Math.round((it.basePrice * priceFactor) / 10) * 10;
   const hasSale = Math.random() < 0.5;
-  const salePrice = hasSale ? Math.round((price * (0.82 + Math.random() * 0.12)) / 10) * 10 : null;
-  const finalPrice = salePrice ?? price;
-  const oldPrice = salePrice ? price : null;
+  const oldPrice = hasSale ? Math.round((current * (1.08 + Math.random() * 0.25)) / 10) * 10 : null;
   const avail = Math.random() < 0.9 ? "in stock" : "out of stock";
+  // Bizim mapper: price ← g:price (GÜNCEL), oldPrice ← g:sale_price (ESKİ/üstü çizili)
   return `  <item>
     <g:id>${it.gtin}</g:id>
     <title>${esc(it.title)}</title>
     <link>https://example-store.com/p/${it.gtin}</link>
-    <g:price>${oldPrice ?? finalPrice} TRY</g:price>
-${oldPrice ? `    <g:sale_price>${finalPrice} TRY</g:sale_price>` : ""}
+    <g:price>${current} TRY</g:price>
+${oldPrice ? `    <g:sale_price>${oldPrice} TRY</g:sale_price>` : ""}
 ${it.image ? `    <g:image_link>${esc(it.image)}</g:image_link>` : ""}
     <g:brand>${esc(it.brand)}</g:brand>
     <g:gtin>${it.gtin}</g:gtin>
