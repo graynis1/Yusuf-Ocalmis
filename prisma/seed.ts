@@ -11,7 +11,7 @@ import path from "node:path";
 import { PrismaClient, Prisma } from "@prisma/client";
 import bcrypt from "bcryptjs";
 import { runFeed } from "../src/feeds/runner";
-import { CATALOG, catalogGtin } from "../data/catalog";
+import { CATALOG, catalogGtin, imageFor } from "../data/catalog";
 
 const prisma = new PrismaClient();
 
@@ -45,6 +45,7 @@ async function assignCatalogData() {
         attributes: item.specs as object,
         rating,
         reviewCount,
+        imageUrl: imageFor(i) ?? undefined,
         description: `${item.brand} ${item.model} — ${item.categoryName} kategorisinde öne çıkan model. Tüm satıcıların güncel fiyatlarını karşılaştır, en uygununu seç.`,
       },
     });

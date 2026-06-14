@@ -123,13 +123,77 @@ export const CATALOG: CatalogItem[] = [
   { brand: "New Balance", model: "574 Sneaker", categoryName: "Ayakkabı", categoryPath: AY, price: 3899, keyword: "sneakers", specs: { Cinsiyet: "Unisex", Renk: "Gri", Taban: "ENCAP", "Üst Malzeme": "Süet - Tekstil" } },
 ];
 
-/** Görsel URL'i — anahtar kelimeye uygun gerçek foto, ürün indeksine göre sabit. */
-export function catalogImage(keyword: string, lock: number, size = 600): string {
-  return `https://loremflickr.com/${size}/${size}/${encodeURIComponent(keyword)}?lock=${lock}`;
+/**
+ * Her ürün için en uygun Wikipedia makale başlığı (CATALOG ile aynı sırada).
+ * Lead görsel buradan çekilir. null → kategori-tipi jenerik makaleye düşülür (gerçek ürün fotosu).
+ */
+export const WIKI_TITLES: (string | null)[] = [
+  "iPhone 15 Pro", "iPhone 15 Pro", "iPhone 15", "iPhone 14",            // 0-3
+  "Samsung Galaxy S24 Ultra", "Samsung Galaxy S24", null, null,          // 4-7 (A55/A35 → Smartphone)
+  "Xiaomi 14", "Redmi Note 13", null, null, null,                        // 8-12
+  "MacBook Air", "MacBook Pro", null, null,                              // 13-16
+  "ThinkPad", null, null, null, null, null,                              // 17-22
+  null, null, null, null, "Sony Bravia", null, null, null,               // 23-30 TV
+  "AirPods Pro", "AirPods", "Samsung Galaxy Buds", null, null, null,     // 31-36
+  "Apple Watch", "Apple Watch", "Samsung Galaxy Watch", null, null, null, // 37-42
+  "PlayStation 5", "PlayStation 5", "Xbox Series X and Series S", "Xbox Series X and Series S", "Nintendo Switch", // 43-47
+  null, null, null, null, null, null, null, null, null,                  // 48-56 beyaz eşya
+  null, null, null, null, null, null, null,                              // 57-63 küçük ev
+  null, null, null, null, null, null, null,                              // 64-70 parfüm/bakım
+  "Nike Air Force 1", "Nike Air Max", "Adidas Samba", "Adidas Ultraboost", "Puma Suede", null, // 71-76
+];
+
+/** Kategori-tipi jenerik Wikipedia makalesi (lead görseli gerçek ürün tipi fotosu). */
+export const GENERIC_WIKI: Record<string, string> = {
+  "Akıllı Telefon": "Smartphone",
+  "Dizüstü": "Laptop",
+  "Televizyon": "Smart TV",
+  "Kulaklık": "Headphones",
+  "Akıllı Saat": "Smartwatch",
+  "Oyun Konsolu": "Nintendo Switch (OLED model)",
+  "Beyaz Eşya": "Major appliance",
+  "Küçük Ev Aletleri": "Small appliance",
+  "Parfüm": "Chanel No. 5",
+  "Ayakkabı": "Sneakers",
+};
+
+/** Beyaz eşya/küçük ev aletleri için ürün-bazlı daha iyi jenerik makaleler. */
+export const ITEM_WIKI_HINT: Record<string, string> = {
+  Buzdolabı: "Refrigerator",
+  "Çamaşır Makinesi": "Washing machine",
+  "Bulaşık Makinesi": "Dishwasher",
+  Süpürge: "Vacuum cleaner",
+  Airfryer: "Air fryer",
+  Fritöz: "Air fryer",
+  "Çay Makinesi": "Kettle",
+  "Espresso Makinesi": "Espresso machine",
+  Blender: "Blender",
+  Parfüm: "Perfume",
+  Kremi: "Cosmetics",
+};
+
+/** Bir ürün için kullanılacak wiki başlığı (spesifik → ürün ipucu → kategori jeneriği). */
+export function wikiTitleFor(index: number): string {
+  const explicit = WIKI_TITLES[index];
+  if (explicit) return explicit;
+  const it = CATALOG[index];
+  for (const [hint, article] of Object.entries(ITEM_WIKI_HINT)) {
+    if (it.model.includes(hint)) return article;
+  }
+  return GENERIC_WIKI[it.categoryName] ?? "Product";
 }
 
 /** Katalog indeksine karşılık gelen kararlı 13 haneli GTIN (generator ve seed paylaşır). */
 export function catalogGtin(index: number): string {
   const base = 8690000000000 + index * 137 + 1;
   return String(base).slice(0, 13);
+}
+
+// Çözülmüş gerçek Wikipedia görselleri (scripts/resolve-images.ts üretir).
+import RESOLVED from "./catalog-images.json";
+const RESOLVED_IMAGES = RESOLVED as Record<string, string>;
+
+/** Ürün indeksi için gerçek görsel URL'i (yoksa null → UI placeholder). */
+export function imageFor(index: number): string | null {
+  return RESOLVED_IMAGES[String(index)] ?? null;
 }

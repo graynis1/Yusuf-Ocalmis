@@ -6,7 +6,7 @@
  */
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import { CATALOG, catalogImage, catalogGtin } from "../data/catalog";
+import { CATALOG, imageFor, catalogGtin } from "../data/catalog";
 
 const STORES = [
   "TeknoMarket", "MegaElektronik", "EvAlışveriş", "TrendStore", "FiyatDeposu",
@@ -19,7 +19,7 @@ function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
-type Built = { gtin: string; mpn: string; title: string; brand: string; product_type: string; basePrice: number; image: string };
+type Built = { gtin: string; mpn: string; title: string; brand: string; product_type: string; basePrice: number; image: string | null };
 
 function buildCatalog(): Built[] {
   return CATALOG.map((it, i) => ({
@@ -29,7 +29,7 @@ function buildCatalog(): Built[] {
     brand: it.brand,
     product_type: it.categoryPath,
     basePrice: it.price,
-    image: catalogImage(it.keyword, i),
+    image: imageFor(i),
   }));
 }
 
@@ -46,6 +46,7 @@ function itemXml(it: Built, priceFactor: number): string {
     <link>https://example-store.com/p/${it.gtin}</link>
     <g:price>${oldPrice ?? finalPrice} TRY</g:price>
 ${oldPrice ? `    <g:sale_price>${finalPrice} TRY</g:sale_price>` : ""}
+${it.image ? `    <g:image_link>${esc(it.image)}</g:image_link>` : ""}
     <g:brand>${esc(it.brand)}</g:brand>
     <g:gtin>${it.gtin}</g:gtin>
     <g:mpn>${esc(it.mpn)}</g:mpn>

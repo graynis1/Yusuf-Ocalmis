@@ -32,7 +32,16 @@ export function ProductImage({
 }) {
   if (src) {
     return (
-      <Image src={src} alt={alt} fill sizes={sizes ?? "240px"} priority={priority} className="object-cover" />
+      <div className="h-full w-full bg-white">
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes={sizes ?? "240px"}
+          priority={priority}
+          className="object-contain p-3"
+        />
+      </div>
     );
   }
 
