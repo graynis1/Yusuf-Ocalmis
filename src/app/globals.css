@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #14182b;
+  --surface: #fbfbfd;
+  --card: #ffffff;
+  --brand: #3d5afe;
+  --save: #06b06a;
+  --rise: #e5484d;
+  --muted: #5b6072;
+  --border: #e6e8ef;
+
+  --radius: 12px;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background-color: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Fiyatlarda kolon hizası için ZORUNLU */
+.tabular {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+@layer utilities {
+  .price-down {
+    color: var(--save);
+  }
+  .price-up {
+    color: var(--rise);
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 8px;
+}

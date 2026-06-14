@@ -1,0 +1,288 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum Role {
+  USER
+  MERCHANT
+  ADMIN
+}
+
+enum MerchantStatus {
+  PENDING
+  APPROVED
+  SUSPENDED
+}
+
+enum SubscriptionTier {
+  FREE
+  PRO
+  PREMIUM
+}
+
+enum PaymentMethod {
+  BANK_TRANSFER
+  STRIPE
+}
+
+enum FeedType {
+  XML
+  CSV
+  JSON
+  GOOGLE_SHOPPING
+  DEMO
+}
+
+enum MatchMethod {
+  GTIN
+  BRAND_MPN
+  FUZZY
+  MANUAL
+}
+
+enum ReviewStatus {
+  PENDING
+  MERGED
+  NEW_PRODUCT
+  REJECTED
+}
+
+enum RunStatus {
+  RUNNING
+  SUCCESS
+  PARTIAL
+  FAILED
+}
+
+model User {
+  id            String       @id @default(cuid())
+  email         String       @unique
+  passwordHash  String?
+  name          String?
+  role          Role         @default(USER)
+  emailVerified DateTime?
+  merchant      Merchant?
+  favorites     Favorite[]
+  alerts        PriceAlert[]
+  createdAt     DateTime     @default(now())
+}
+
+model Merchant {
+  id             String           @id @default(cuid())
+  userId         String?          @unique
+  user           User?            @relation(fields: [userId], references: [id])
+  name           String
+  slug           String           @unique
+  logoUrl        String?
+  websiteUrl     String?
+  status         MerchantStatus   @default(PENDING)
+  tier           SubscriptionTier @default(FREE)
+  commissionRate Decimal?         @db.Decimal(5, 2)
+  isSystem       Boolean          @default(false)
+  offers         Offer[]
+  feeds          FeedSource[]
+  subscription   Subscription?
+  clicks         Click[]
+  createdAt      DateTime         @default(now())
+}
+
+model Category {
+  id       String     @id @default(cuid())
+  name     String
+  slug     String     @unique
+  iconKey  String?
+  parentId String?
+  parent   Category?  @relation("Tree", fields: [parentId], references: [id])
+  children Category[] @relation("Tree")
+  path     String
+  order    Int        @default(0)
+  products Product[]
+
+  @@index([parentId])
+  @@index([path])
+}
+
+model Brand {
+  id       String    @id @default(cuid())
+  name     String
+  slug     String    @unique
+  logoUrl  String?
+  products Product[]
+}
+
+model Product {
+  id          String         @id @default(cuid())
+  title       String
+  slug        String         @unique
+  description String?
+  brandId     String?
+  brand       Brand?         @relation(fields: [brandId], references: [id])
+  categoryId  String
+  category    Category       @relation(fields: [categoryId], references: [id])
+  gtin        String?        @unique
+  mpn         String?
+  imageUrl    String?
+  images      Json?
+  attributes  Json?
+  lowestPrice Decimal?       @db.Decimal(12, 2)
+  offerCount  Int            @default(0)
+  offers      Offer[]
+  history     PriceHistory[]
+  alerts      PriceAlert[]
+  favorites   Favorite[]
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+
+  @@index([categoryId])
+  @@index([brandId])
+  @@index([gtin])
+}
+
+model Offer {
+  id              String         @id @default(cuid())
+  productId       String?
+  product         Product?       @relation(fields: [productId], references: [id])
+  merchantId      String
+  merchant        Merchant       @relation(fields: [merchantId], references: [id])
+  externalId      String
+  title           String
+  url             String
+  affiliateUrl    String?
+  imageUrl        String?
+  price           Decimal        @db.Decimal(12, 2)
+  oldPrice        Decimal?       @db.Decimal(12, 2)
+  currency        String         @default("TRY")
+  inStock         Boolean        @default(true)
+  shippingInfo    String?
+  rawData         Json?
+  matchConfidence Float          @default(0)
+  matchMethod     MatchMethod?
+  isSponsored     Boolean        @default(false)
+  lastSeenAt      DateTime       @default(now())
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  history         PriceHistory[]
+  clicks          Click[]
+  review          MatchReview?
+
+  @@unique([merchantId, externalId])
+  @@index([productId])
+  @@index([price])
+}
+
+model PriceHistory {
+  id         String   @id @default(cuid())
+  productId  String
+  product    Product  @relation(fields: [productId], references: [id])
+  offerId    String?
+  offer      Offer?   @relation(fields: [offerId], references: [id])
+  price      Decimal  @db.Decimal(12, 2)
+  recordedAt DateTime @default(now())
+
+  @@index([productId, recordedAt])
+}
+
+model FeedSource {
+  id            String         @id @default(cuid())
+  merchantId    String
+  merchant      Merchant       @relation(fields: [merchantId], references: [id])
+  name          String
+  type          FeedType
+  url           String?
+  mappingConfig Json
+  enabled       Boolean        @default(true)
+  schedule      String         @default("hourly")
+  lastRunAt     DateTime?
+  lastStatus    RunStatus?
+  lastError     String?
+  itemCount     Int            @default(0)
+  runs          IngestionRun[]
+  createdAt     DateTime       @default(now())
+}
+
+model IngestionRun {
+  id             String     @id @default(cuid())
+  feedSourceId   String
+  feedSource     FeedSource @relation(fields: [feedSourceId], references: [id])
+  status         RunStatus  @default(RUNNING)
+  cursor         String?
+  itemsProcessed Int        @default(0)
+  itemsCreated   Int        @default(0)
+  itemsUpdated   Int        @default(0)
+  errors         Json?
+  startedAt      DateTime   @default(now())
+  finishedAt     DateTime?
+
+  @@index([feedSourceId, status])
+}
+
+model MatchReview {
+  id         String       @id @default(cuid())
+  offerId    String       @unique
+  offer      Offer        @relation(fields: [offerId], references: [id])
+  candidates Json
+  confidence Float
+  status     ReviewStatus @default(PENDING)
+  reviewedBy String?
+  createdAt  DateTime     @default(now())
+
+  @@index([status])
+}
+
+model Click {
+  id         String   @id @default(cuid())
+  offerId    String
+  offer      Offer    @relation(fields: [offerId], references: [id])
+  merchantId String
+  merchant   Merchant @relation(fields: [merchantId], references: [id])
+  userId     String?
+  ipHash     String?
+  userAgent  String?
+  createdAt  DateTime @default(now())
+
+  @@index([merchantId, createdAt])
+  @@index([offerId])
+}
+
+model PriceAlert {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id])
+  productId   String
+  product     Product   @relation(fields: [productId], references: [id])
+  targetPrice Decimal   @db.Decimal(12, 2)
+  active      Boolean   @default(true)
+  notifiedAt  DateTime?
+  createdAt   DateTime  @default(now())
+
+  @@unique([userId, productId])
+}
+
+model Favorite {
+  id        String   @id @default(cuid())
+  userId    String
+  productId String
+  user      User     @relation(fields: [userId], references: [id])
+  product   Product  @relation(fields: [productId], references: [id])
+  createdAt DateTime @default(now())
+
+  @@unique([userId, productId])
+}
+
+model Subscription {
+  id            String           @id @default(cuid())
+  merchantId    String           @unique
+  merchant      Merchant         @relation(fields: [merchantId], references: [id])
+  tier          SubscriptionTier
+  status        String           @default("active")
+  paymentMethod PaymentMethod    @default(BANK_TRANSFER)
+  approvedBy    String?
+  startedAt     DateTime         @default(now())
+  endsAt        DateTime?
+}
