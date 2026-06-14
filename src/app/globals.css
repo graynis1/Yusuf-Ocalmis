@@ -3,20 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --ink: #14182b;
-  --surface: #fbfbfd;
-  --card: #ffffff;
-  --brand: #3d5afe;
-  --save: #06b06a;
-  --rise: #e5484d;
-  --muted: #5b6072;
-  --border: #e6e8ef;
+  /* Premium koyu + neon palet */
+  --ink: #f3f5ff;          /* ana metin (neredeyse beyaz) */
+  --surface: #07080f;      /* sayfa zemini (derin gece) */
+  --surface-2: #0c0e18;    /* ikincil zemin */
+  --card: #11131f;         /* kart yüzeyi */
+  --elev: #171a29;         /* yükseltilmiş yüzey */
+  --brand: #6c7bff;        /* neon indigo — link/aksan */
+  --brand-2: #a855f7;      /* neon mor — degrade ucu */
+  --save: #00e5a0;         /* neon yeşil — düşüş/tasarruf */
+  --rise: #ff5c7a;         /* neon kırmızı — artış */
+  --muted: #8b91ad;        /* ikincil metin */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
 
-  --radius: 12px;
+  --radius: 14px;
 }
 
 * {
   border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,11 +34,16 @@ body {
   font-family: var(--font-body), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  /* Hafif neon ambient ışık (sabit, performanssız) */
+  background-image:
+    radial-gradient(60rem 40rem at 15% -10%, rgba(108, 123, 255, 0.12), transparent 60%),
+    radial-gradient(50rem 36rem at 100% 0%, rgba(168, 85, 247, 0.10), transparent 55%);
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, .font-display {
   font-family: var(--font-display), system-ui, sans-serif;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 /* Fiyatlarda kolon hizası için ZORUNLU */
@@ -38,12 +52,50 @@ h1, h2, h3, h4, .font-display {
   font-variant-numeric: tabular-nums;
 }
 
+@layer components {
+  /* Cam panel — premium yüzey dili */
+  .glass {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+  }
+  /* Neon degrade metin (başlıklar için) */
+  .text-gradient {
+    background: linear-gradient(100deg, var(--ink) 10%, var(--brand) 55%, var(--brand-2) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  /* Neon buton glow */
+  .glow-brand {
+    box-shadow: 0 0 0 1px rgba(108, 123, 255, 0.4), 0 8px 30px -8px rgba(108, 123, 255, 0.55);
+  }
+  .glow-save {
+    box-shadow: 0 0 0 1px rgba(0, 229, 160, 0.4), 0 8px 30px -8px rgba(0, 229, 160, 0.5);
+  }
+  /* Kartlarda hover neon kenar */
+  .card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-3px);
+    border-color: var(--border-strong);
+    box-shadow: 0 18px 40px -20px rgba(108, 123, 255, 0.45);
+  }
+}
+
 @layer utilities {
   .price-down {
     color: var(--save);
   }
   .price-up {
     color: var(--rise);
+  }
+  .neon-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 38px 38px;
   }
 }
 
@@ -67,7 +119,18 @@ h1, h2, h3, h4, .font-display {
   width: 10px;
   height: 10px;
 }
+::-webkit-scrollbar-track {
+  background: transparent;
+}
 ::-webkit-scrollbar-thumb {
-  background: var(--border);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::selection {
+  background: rgba(108, 123, 255, 0.35);
+  color: #fff;
 }

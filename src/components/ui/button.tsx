@@ -4,16 +4,18 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-semibold transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-semibold transition-all duration-200 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "bg-[var(--brand)] text-white hover:opacity-90",
-        save: "bg-[var(--save)] text-white hover:opacity-90",
-        outline: "border border-[var(--border)] bg-white hover:bg-[var(--surface)] text-ink",
-        ghost: "hover:bg-[var(--surface)] text-ink",
-        subtle: "bg-[var(--surface)] text-ink hover:bg-[var(--border)]",
-        destructive: "bg-[var(--rise)] text-white hover:opacity-90",
+        default:
+          "bg-gradient-to-r from-[var(--brand)] to-[var(--brand-2)] text-white hover:brightness-110 hover:shadow-glow",
+        save: "bg-[var(--save)] text-[#04221a] hover:brightness-110 hover:shadow-glow-save",
+        outline:
+          "border border-[var(--border-strong)] bg-white/5 text-ink hover:bg-white/10 hover:border-[var(--brand)]/50",
+        ghost: "text-ink hover:bg-white/5",
+        subtle: "bg-white/5 text-ink hover:bg-white/10",
+        destructive: "bg-[var(--rise)] text-white hover:brightness-110",
         link: "text-brand underline-offset-4 hover:underline",
       },
       size: {

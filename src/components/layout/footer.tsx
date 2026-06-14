@@ -33,11 +33,12 @@ const cols = [
 
 export function Footer() {
   return (
-    <footer className="mt-16 border-t border-[var(--border)] bg-white">
+    <footer className="relative mt-20 border-t border-[var(--border)] bg-[var(--surface-2)]">
+      <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-[var(--brand)]/50 to-transparent" />
       <div className="container grid grid-cols-2 gap-8 py-12 md:grid-cols-5">
         <div className="col-span-2 md:col-span-1">
           <div className="font-display text-lg font-extrabold">
-            FİYAT<span className="text-[var(--brand)]">BUL</span>
+            FİYAT<span className="bg-gradient-to-r from-[var(--brand)] to-[var(--brand-2)] bg-clip-text text-transparent">BUL</span>
           </div>
           <p className="mt-2 text-sm text-[var(--muted)]">
             Akıllı fiyat karşılaştırma. Daha az öde, daha çok kazan.

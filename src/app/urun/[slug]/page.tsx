@@ -134,7 +134,7 @@ export default async function ProductPage({ params }: { params: { slug: string }
                     En iyi fiyat
                   </span>
                   <div className="mt-1 flex items-baseline gap-3">
-                    <span className="tabular text-3xl font-extrabold text-ink">
+                    <span className="tabular text-3xl font-extrabold text-[var(--save)]">
                       {formatPrice(best.price)}
                     </span>
                     {best.oldPrice && best.oldPrice > best.price && (
@@ -150,7 +150,7 @@ export default async function ProductPage({ params }: { params: { slug: string }
                 </div>
                 <a
                   href={`/out/${best.id}`}
-                  className="inline-flex h-12 items-center rounded-md bg-[var(--save)] px-6 font-semibold text-white hover:opacity-90"
+                  className="inline-flex h-12 items-center rounded-full bg-[var(--save)] px-6 font-bold text-[#04221a] shadow-glow-save transition-transform hover:scale-[1.03]"
                   rel="nofollow sponsored"
                 >
                   Mağazaya git
@@ -184,7 +184,7 @@ export default async function ProductPage({ params }: { params: { slug: string }
               <h2 className="mb-3 font-display text-lg font-bold">Teknik özellikler</h2>
               <dl className="overflow-hidden rounded-lg border border-[var(--border)]">
                 {Object.entries(attrs).map(([k, v], i) => (
-                  <div key={k} className={`flex ${i % 2 ? "bg-[var(--surface)]" : "bg-white"}`}>
+                  <div key={k} className={`flex ${i % 2 ? "bg-white/[0.03]" : "bg-transparent"}`}>
                     <dt className="w-1/3 px-4 py-2 text-sm capitalize text-[var(--muted)]">{k}</dt>
                     <dd className="px-4 py-2 text-sm text-ink">{v}</dd>
                   </div>
