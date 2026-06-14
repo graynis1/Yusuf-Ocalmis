@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
-import { Store, Truck } from "lucide-react";
+import { Truck } from "lucide-react";
 import { formatPrice, discountPct } from "@/lib/utils";
 import { PriceDelta } from "./price-delta";
 import { RatingStars } from "./rating-stars";
+import { ProductImage } from "./product-image";
 import { Badge } from "@/components/ui/badge";
 
 export type ProductCardData = {
@@ -11,6 +11,7 @@ export type ProductCardData = {
   title: string;
   imageUrl?: string | null;
   brandName?: string | null;
+  categorySlug?: string | null;
   lowestPrice?: number | null;
   oldPrice?: number | null;
   offerCount: number;
@@ -31,19 +32,15 @@ export function ProductCard({ p }: { p: ProductCardData }) {
       className="group flex flex-col overflow-hidden rounded-lg border border-[var(--border)] bg-card transition-all hover:-translate-y-0.5 hover:border-[var(--brand)]/40 hover:shadow-lg"
     >
       <div className="relative aspect-square overflow-hidden bg-white">
-        {p.imageUrl ? (
-          <Image
+        <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-105">
+          <ProductImage
             src={p.imageUrl}
             alt={p.title}
-            fill
+            brand={p.brandName}
+            categorySlug={p.categorySlug}
             sizes="(max-width:768px) 50vw, 240px"
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
-        ) : (
-          <div className="flex h-full items-center justify-center text-[var(--muted)]">
-            <Store className="size-10" />
-          </div>
-        )}
+        </div>
         {pct > 0 && (
           <span className="absolute right-2 top-2 rounded-md bg-[var(--save)] px-1.5 py-0.5 text-xs font-bold text-white">
             %{pct}

@@ -15,15 +15,17 @@ export async function getTopDeals(limit = 12): Promise<ProductCardData[]> {
       offerCount: number;
       rating: number | null;
       reviewCount: number;
+      categorySlug: string | null;
     }[]
   >(Prisma.sql`
     SELECT p.slug, p.title, p."imageUrl", b.name AS "brandName",
            p."lowestPrice"::float8 AS "lowestPrice",
            o."oldPrice"::float8 AS "oldPrice",
-           p."offerCount", p.rating, p."reviewCount"
+           p."offerCount", p.rating, p."reviewCount", c.slug AS "categorySlug"
     FROM "Product" p
     JOIN "Offer" o ON o."productId" = p.id AND o.price = p."lowestPrice"
     LEFT JOIN "Brand" b ON b.id = p."brandId"
+    LEFT JOIN "Category" c ON c.id = p."categoryId"
     WHERE o."oldPrice" IS NOT NULL AND o."oldPrice" > o.price AND p."offerCount" > 0
     ORDER BY (o."oldPrice" - o.price) / o."oldPrice" DESC
     LIMIT ${limit}
@@ -46,6 +48,7 @@ export async function getTrendingProducts(limit = 12): Promise<ProductCardData[]
       rating: true,
       reviewCount: true,
       brand: { select: { name: true } },
+      category: { select: { slug: true } },
     },
   });
   return rows.map((r) => ({
@@ -53,6 +56,7 @@ export async function getTrendingProducts(limit = 12): Promise<ProductCardData[]
     title: r.title,
     imageUrl: r.imageUrl,
     brandName: r.brand?.name ?? null,
+    categorySlug: r.category?.slug ?? null,
     lowestPrice: r.lowestPrice ? Number(r.lowestPrice) : null,
     offerCount: r.offerCount,
     rating: r.rating,
@@ -148,6 +152,7 @@ export async function getSimilarProducts(
       rating: true,
       reviewCount: true,
       brand: { select: { name: true } },
+      category: { select: { slug: true } },
     },
   });
   return rows.map((r) => ({
@@ -155,6 +160,7 @@ export async function getSimilarProducts(
     title: r.title,
     imageUrl: r.imageUrl,
     brandName: r.brand?.name ?? null,
+    categorySlug: r.category?.slug ?? null,
     lowestPrice: r.lowestPrice ? Number(r.lowestPrice) : null,
     offerCount: r.offerCount,
     rating: r.rating,

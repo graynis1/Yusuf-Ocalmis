@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { TrendingDown, ArrowRight, ShieldCheck, Store, LineChart } from "lucide-react";
 import {
   getTopDeals,
@@ -8,6 +7,7 @@ import {
   getTopBrands,
 } from "@/server/products";
 import { ProductCard } from "@/components/product/product-card";
+import { ProductImage } from "@/components/product/product-image";
 import { ProductGrid } from "@/components/product/product-grid";
 import { SearchBar } from "@/components/search/search-bar";
 
@@ -62,10 +62,10 @@ export default async function HomePage() {
                 href={`/kategori/${c.slug}`}
                 className="group overflow-hidden rounded-lg border border-[var(--border)] bg-card transition-all hover:-translate-y-0.5 hover:border-[var(--brand)]/40 hover:shadow-md"
               >
-                <div className="relative aspect-[4/3] bg-white">
-                  {c.imageUrl && (
-                    <Image src={c.imageUrl} alt={c.name} fill sizes="200px" className="object-cover transition-transform duration-300 group-hover:scale-105" />
-                  )}
+                <div className="relative aspect-[4/3] overflow-hidden bg-white">
+                  <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-105">
+                    <ProductImage src={null} alt={c.name} categorySlug={c.slug} sizes="200px" />
+                  </div>
                 </div>
                 <div className="p-3">
                   <div className="text-sm font-semibold text-ink group-hover:text-[var(--brand)]">{c.name}</div>

@@ -17,6 +17,7 @@ import { ProductActions } from "@/components/product/product-actions";
 import { ProductGrid } from "@/components/product/product-grid";
 import { PriceDelta } from "@/components/product/price-delta";
 import { RatingStars } from "@/components/product/rating-stars";
+import { ProductImage } from "@/components/product/product-image";
 import { Badge } from "@/components/ui/badge";
 
 export const dynamic = "force-dynamic";
@@ -86,20 +87,14 @@ export default async function ProductPage({ params }: { params: { slug: string }
         {/* Galeri */}
         <div className="lg:sticky lg:top-20 lg:self-start">
           <div className="relative aspect-square overflow-hidden rounded-lg border border-[var(--border)] bg-white">
-            {product.imageUrl ? (
-              <Image
-                src={product.imageUrl}
-                alt={product.title}
-                fill
-                sizes="420px"
-                className="object-cover"
-                priority
-              />
-            ) : (
-              <div className="flex h-full items-center justify-center text-[var(--muted)]">
-                <Store className="size-16" />
-              </div>
-            )}
+            <ProductImage
+              src={product.imageUrl}
+              alt={product.title}
+              brand={product.brand?.name}
+              categorySlug={product.category.slug}
+              sizes="420px"
+              priority
+            />
           </div>
         </div>
 

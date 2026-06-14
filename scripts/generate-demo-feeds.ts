@@ -46,7 +46,6 @@ function itemXml(it: Built, priceFactor: number): string {
     <link>https://example-store.com/p/${it.gtin}</link>
     <g:price>${oldPrice ?? finalPrice} TRY</g:price>
 ${oldPrice ? `    <g:sale_price>${finalPrice} TRY</g:sale_price>` : ""}
-    <g:image_link>${esc(it.image)}</g:image_link>
     <g:brand>${esc(it.brand)}</g:brand>
     <g:gtin>${it.gtin}</g:gtin>
     <g:mpn>${esc(it.mpn)}</g:mpn>

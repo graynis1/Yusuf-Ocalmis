@@ -136,7 +136,7 @@ async function seedSystemMerchants() {
         status: "APPROVED",
         tier: "FREE",
         commissionRate: new Prisma.Decimal((3 + Math.random() * 7).toFixed(2)),
-        logoUrl: `https://picsum.photos/seed/${slug}-logo/120/120`,
+        logoUrl: null,
         websiteUrl: `https://${slug}.example.com`,
       },
     });
