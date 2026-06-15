@@ -81,6 +81,14 @@ model Merchant {
   slug           String           @unique
   logoUrl        String?
   websiteUrl     String?
+  description    String?
+  contactName    String?
+  email          String?
+  phone          String?
+  taxId          String?
+  city           String?
+  address        String?
+  sector         String?
   status         MerchantStatus   @default(PENDING)
   tier           SubscriptionTier @default(FREE)
   commissionRate Decimal?         @db.Decimal(5, 2)

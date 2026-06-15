@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidateTag } from "next/cache";
 import { runDueFeeds } from "@/feeds/runner";
 
 export const dynamic = "force-dynamic";
@@ -17,6 +18,8 @@ export async function GET(req: Request) {
   }
   try {
     const results = await runDueFeeds();
+    // Yeni fiyatlar geldi → ana sayfa/kategori cache'ini tazele
+    revalidateTag("catalog");
     return NextResponse.json({ ok: true, results });
   } catch (e) {
     return NextResponse.json({ ok: false, error: (e as Error).message }, { status: 500 });

@@ -1,16 +1,17 @@
 import Link from "next/link";
 import { TrendingDown, ArrowRight, ShieldCheck, Store, LineChart, Tag } from "lucide-react";
 import {
-  getTopDeals,
-  getTrendingProducts,
-  getCategoryTiles,
-  getCategoryRails,
-  getTopBrands,
-} from "@/server/products";
+  getTopDealsCached,
+  getTrendingCached,
+  getCategoryTilesCached,
+  getCategoryRailsCached,
+  getTopBrandsCached,
+} from "@/server/cached";
 import { ProductCard } from "@/components/product/product-card";
 import { ProductImage } from "@/components/product/product-image";
+import { RecentlyViewed } from "@/components/product/recently-viewed";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 async function safe<T>(p: Promise<T>, fallback: T): Promise<T> {
   try {
@@ -38,11 +39,11 @@ function SectionHead({ title, href, icon }: { title: string; href?: string; icon
 
 export default async function HomePage() {
   const [deals, trending, tiles, rails, brands] = await Promise.all([
-    safe(getTopDeals(6), []),
-    safe(getTrendingProducts(6), []),
-    safe(getCategoryTiles(10), []),
-    safe(getCategoryRails(4, 6), []),
-    safe(getTopBrands(16), []),
+    safe(getTopDealsCached(6), []),
+    safe(getTrendingCached(6), []),
+    safe(getCategoryTilesCached(10), []),
+    safe(getCategoryRailsCached(4, 6), []),
+    safe(getTopBrandsCached(16), []),
   ]);
 
   return (
@@ -124,6 +125,8 @@ export default async function HomePage() {
           </div>
         </section>
       )}
+
+      <RecentlyViewed />
     </div>
   );
 }

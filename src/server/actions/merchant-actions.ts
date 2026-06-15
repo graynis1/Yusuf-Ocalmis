@@ -9,10 +9,21 @@ import { slugify } from "@/lib/utils";
 import { getCurrentMerchant } from "@/server/merchant";
 import { getAdapter } from "@/feeds/adapters";
 
+const optionalText = z.string().trim().max(500).optional().or(z.literal(""));
+const optionalUrl = z.string().url().optional().or(z.literal(""));
+
 const registerSchema = z.object({
-  name: z.string().min(2),
-  websiteUrl: z.string().url().optional().or(z.literal("")),
-  logoUrl: z.string().url().optional().or(z.literal("")),
+  name: z.string().min(2, "Firma adı en az 2 karakter olmalı."),
+  sector: optionalText,
+  description: z.string().trim().max(1000).optional().or(z.literal("")),
+  contactName: optionalText,
+  email: z.string().email("Geçerli bir e-posta gir.").optional().or(z.literal("")),
+  phone: optionalText,
+  taxId: optionalText,
+  city: optionalText,
+  address: z.string().trim().max(500).optional().or(z.literal("")),
+  websiteUrl: optionalUrl,
+  logoUrl: optionalUrl,
 });
 
 export async function registerMerchantAction(_prev: unknown, formData: FormData) {
@@ -21,10 +32,20 @@ export async function registerMerchantAction(_prev: unknown, formData: FormData)
 
   const parsed = registerSchema.safeParse({
     name: formData.get("name"),
+    sector: formData.get("sector"),
+    description: formData.get("description"),
+    contactName: formData.get("contactName"),
+    email: formData.get("email"),
+    phone: formData.get("phone"),
+    taxId: formData.get("taxId"),
+    city: formData.get("city"),
+    address: formData.get("address"),
     websiteUrl: formData.get("websiteUrl"),
     logoUrl: formData.get("logoUrl"),
   });
-  if (!parsed.success) return { error: "Geçersiz bilgiler." };
+  if (!parsed.success) {
+    return { error: parsed.error.issues[0]?.message ?? "Geçersiz bilgiler." };
+  }
 
   const existing = await prisma.merchant.findUnique({ where: { userId: session.user.id } });
   if (existing) return { error: "Zaten bir mağaza başvurun var." };
@@ -33,13 +54,22 @@ export async function registerMerchantAction(_prev: unknown, formData: FormData)
   const clash = await prisma.merchant.findUnique({ where: { slug } });
   if (clash) slug = `${slug}-${Math.random().toString(36).slice(2, 6)}`;
 
+  const d = parsed.data;
   await prisma.merchant.create({
     data: {
       userId: session.user.id,
-      name: parsed.data.name,
+      name: d.name,
       slug,
-      websiteUrl: parsed.data.websiteUrl || null,
-      logoUrl: parsed.data.logoUrl || null,
+      sector: d.sector || null,
+      description: d.description || null,
+      contactName: d.contactName || null,
+      email: d.email || null,
+      phone: d.phone || null,
+      taxId: d.taxId || null,
+      city: d.city || null,
+      address: d.address || null,
+      websiteUrl: d.websiteUrl || null,
+      logoUrl: d.logoUrl || null,
       status: "PENDING",
       tier: "FREE",
     },

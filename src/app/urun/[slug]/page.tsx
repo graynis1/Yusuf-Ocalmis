@@ -18,6 +18,7 @@ import { ProductGrid } from "@/components/product/product-grid";
 import { PriceDelta } from "@/components/product/price-delta";
 import { RatingStars } from "@/components/product/rating-stars";
 import { ProductImage } from "@/components/product/product-image";
+import { RecentlyViewedTracker, RecentlyViewed } from "@/components/product/recently-viewed";
 import { Badge } from "@/components/ui/badge";
 
 export const dynamic = "force-dynamic";
@@ -73,6 +74,19 @@ export default async function ProductPage({ params }: { params: { slug: string }
 
   return (
     <div className="container py-8">
+      <RecentlyViewedTracker
+        product={{
+          slug: product.slug,
+          title: product.title,
+          imageUrl: product.imageUrl,
+          brandName: product.brand?.name ?? null,
+          categorySlug: product.category.slug,
+          lowestPrice: lowestPrice,
+          offerCount: offers.length,
+          rating: product.rating,
+          reviewCount: product.reviewCount,
+        }}
+      />
       <nav className="mb-4 flex items-center gap-1 text-sm text-[var(--muted)]" aria-label="breadcrumb">
         <Link href="/" className="hover:text-ink">Ana sayfa</Link>
         <ChevronRight className="size-3" />
@@ -202,6 +216,8 @@ export default async function ProductPage({ params }: { params: { slug: string }
           <ProductGrid products={similar} />
         </section>
       )}
+
+      <RecentlyViewed excludeSlug={product.slug} />
     </div>
   );
 }
