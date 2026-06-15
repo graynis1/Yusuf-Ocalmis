@@ -6,6 +6,7 @@ const cols = [
     links: [
       { href: "/ara", label: "Tüm ürünler" },
       { href: "/", label: "Günün fırsatları" },
+      { href: "/karsilastir", label: "Ürün karşılaştır" },
     ],
   },
   {
@@ -59,8 +60,9 @@ export function Footer() {
         ))}
       </div>
       <div className="border-t border-[var(--border)]">
-        <div className="container py-4 text-xs text-[var(--muted)]">
-          © {new Date().getFullYear()} FİYATBUL. Tüm hakları saklıdır.
+        <div className="container flex flex-wrap items-center justify-between gap-1 py-4 text-xs text-[var(--muted)]">
+          <span>© 2025 FİYATBUL. Tüm hakları saklıdır.</span>
+          <span>Yusuf Öcalmış</span>
         </div>
       </div>
     </footer>

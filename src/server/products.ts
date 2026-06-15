@@ -172,6 +172,57 @@ export async function getPriceHistory(productId: string, days = 90) {
   return rows;
 }
 
+export type CompareProduct = {
+  slug: string;
+  title: string;
+  imageUrl: string | null;
+  brandName: string | null;
+  categoryName: string | null;
+  categorySlug: string | null;
+  lowestPrice: number | null;
+  offerCount: number;
+  rating: number | null;
+  reviewCount: number;
+  attributes: Record<string, string>;
+};
+
+/** Karşılaştırma için birden çok ürünü slug listesiyle getir (giriş sırasını korur). */
+export async function getProductsForCompare(slugs: string[]): Promise<CompareProduct[]> {
+  if (slugs.length === 0) return [];
+  const rows = await prisma.product.findMany({
+    where: { slug: { in: slugs } },
+    select: {
+      slug: true,
+      title: true,
+      imageUrl: true,
+      lowestPrice: true,
+      offerCount: true,
+      rating: true,
+      reviewCount: true,
+      attributes: true,
+      brand: { select: { name: true } },
+      category: { select: { name: true, slug: true } },
+    },
+  });
+  const map = new Map(rows.map((r) => [r.slug, r]));
+  return slugs
+    .map((s) => map.get(s))
+    .filter((r): r is NonNullable<typeof r> => Boolean(r))
+    .map((r) => ({
+      slug: r.slug,
+      title: r.title,
+      imageUrl: r.imageUrl,
+      brandName: r.brand?.name ?? null,
+      categoryName: r.category?.name ?? null,
+      categorySlug: r.category?.slug ?? null,
+      lowestPrice: r.lowestPrice ? Number(r.lowestPrice) : null,
+      offerCount: r.offerCount,
+      rating: r.rating,
+      reviewCount: r.reviewCount,
+      attributes: (r.attributes as Record<string, string> | null) ?? {},
+    }));
+}
+
 /** Benzer ürünler (aynı kategori). */
 export async function getSimilarProducts(
   categoryId: string,

@@ -19,6 +19,7 @@ import { PriceDelta } from "@/components/product/price-delta";
 import { RatingStars } from "@/components/product/rating-stars";
 import { ProductImage } from "@/components/product/product-image";
 import { RecentlyViewedTracker, RecentlyViewed } from "@/components/product/recently-viewed";
+import { CompareButton } from "@/components/product/compare-button";
 import { Badge } from "@/components/ui/badge";
 
 export const dynamic = "force-dynamic";
@@ -180,6 +181,19 @@ export default async function ProductPage({ params }: { params: { slug: string }
             initialFavorite={initialFavorite}
             initialAlertPrice={initialAlertPrice}
           />
+
+          <CompareButton
+            item={{
+              slug: product.slug,
+              title: product.title,
+              imageUrl: product.imageUrl,
+              brandName: product.brand?.name ?? null,
+              categorySlug: product.category.slug,
+              lowestPrice: lowestPrice,
+              offerCount: offers.length,
+            }}
+          />
+
 
           {/* Fiyat geçmişi */}
           <div className="rounded-lg border border-[var(--border)] bg-card p-5">
