@@ -11,6 +11,7 @@ export interface SearchParams {
   min?: number;
   max?: number;
   attrs?: Record<string, string[]>; // facet: { renk: ["Siyah"], ... }
+  onlyDeals?: boolean; // sadece indirimli (oldPrice > price teklifi olan) ürünler
   sort?: SortKey;
   page?: number;
   pageSize?: number;
@@ -69,6 +70,12 @@ export async function searchProducts(params: SearchParams): Promise<SearchResult
   }
   if (params.min !== undefined) conds.push(Prisma.sql`p."lowestPrice" >= ${params.min}`);
   if (params.max !== undefined) conds.push(Prisma.sql`p."lowestPrice" <= ${params.max}`);
+
+  if (params.onlyDeals) {
+    conds.push(
+      Prisma.sql`EXISTS(SELECT 1 FROM "Offer" o WHERE o."productId" = p.id AND o."oldPrice" IS NOT NULL AND o."oldPrice" > o.price)`
+    );
+  }
 
   if (params.attrs) {
     for (const [key, values] of Object.entries(params.attrs)) {

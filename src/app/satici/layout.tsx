@@ -2,6 +2,7 @@ import { SideNav } from "@/components/dashboard/side-nav";
 
 const NAV = [
   { href: "/satici/panel", label: "Panel" },
+  { href: "/satici/profil", label: "Mağaza profili" },
   { href: "/satici/feeds", label: "Feed'ler" },
   { href: "/satici/listings", label: "Listingler" },
   { href: "/satici/analytics", label: "Analitik" },

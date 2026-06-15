@@ -50,7 +50,8 @@ export default async function MerchantDashboard() {
         <MiniChart data={series} label="Tıklama" />
       </div>
 
-      <div className="mt-6 flex gap-3">
+      <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2">
+        <Link href="/satici/profil" className="text-sm font-medium text-[var(--brand)]">Mağaza profilini düzenle →</Link>
         <Link href="/satici/feeds" className="text-sm font-medium text-[var(--brand)]">Feed bağla →</Link>
         <Link href="/satici/analytics" className="text-sm font-medium text-[var(--brand)]">Analitiği gör →</Link>
       </div>

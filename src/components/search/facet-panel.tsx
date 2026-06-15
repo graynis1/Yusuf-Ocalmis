@@ -14,6 +14,7 @@ export function FacetPanel({ facets }: { facets: Facets }) {
   const selectedBrands = sp.getAll("marka");
   const minVal = sp.get("min") ?? "";
   const maxVal = sp.get("max") ?? "";
+  const onlyDeals = sp.get("indirim") === "1";
 
   const [min, setMin] = React.useState(minVal);
   const [max, setMax] = React.useState(maxVal);
@@ -37,7 +38,14 @@ export function FacetPanel({ facets }: { facets: Facets }) {
     });
   }
 
-  const hasFilters = selectedBrands.length > 0 || minVal || maxVal || [...sp.keys()].some((k) => k.startsWith("attr_"));
+  const hasFilters = selectedBrands.length > 0 || minVal || maxVal || onlyDeals || [...sp.keys()].some((k) => k.startsWith("attr_"));
+
+  function toggleDeals() {
+    update((params) => {
+      if (onlyDeals) params.delete("indirim");
+      else params.set("indirim", "1");
+    });
+  }
 
   return (
     <aside className="space-y-6">
@@ -52,6 +60,28 @@ export function FacetPanel({ facets }: { facets: Facets }) {
           </button>
         )}
       </div>
+
+      {/* Hızlı filtreler */}
+      <button
+        onClick={toggleDeals}
+        aria-pressed={onlyDeals}
+        className={`flex w-full items-center justify-between rounded-md border px-3 py-2 text-sm font-medium transition-colors ${
+          onlyDeals
+            ? "border-[var(--save)] bg-[var(--save)]/10 text-[var(--save)]"
+            : "border-[var(--border-strong)] text-ink hover:bg-[var(--surface)]"
+        }`}
+      >
+        <span className="flex items-center gap-2">
+          <span aria-hidden>🏷️</span> Sadece indirimdekiler
+        </span>
+        <span
+          className={`grid size-5 place-items-center rounded-full border text-xs ${
+            onlyDeals ? "border-[var(--save)] bg-[var(--save)] text-white" : "border-[var(--border-strong)]"
+          }`}
+        >
+          {onlyDeals ? "✓" : ""}
+        </span>
+      </button>
 
       {/* Fiyat aralığı */}
       <div>

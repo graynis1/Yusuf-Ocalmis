@@ -28,6 +28,7 @@ export function parseSearchParams(
     min: Number.isFinite(min) ? min : undefined,
     max: Number.isFinite(max) ? max : undefined,
     attrs: Object.keys(attrs).length ? attrs : undefined,
+    onlyDeals: raw.indirim === "1",
     sort: (typeof raw.sort === "string" ? raw.sort : undefined) as SortKey | undefined,
     page: raw.page ? Math.max(1, Number(raw.page)) : 1,
     ...overrides,

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { fontBody, fontDisplay, fontMono } from "@/lib/fonts";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   description:
     "Yüzlerce mağazanın fiyatını tek yerde karşılaştır, fiyat geçmişini gör, en iyi fırsatı yakala.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+};
+
+export const viewport: Viewport = {
+  themeColor: "#f4671f",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

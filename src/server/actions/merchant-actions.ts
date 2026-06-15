@@ -82,6 +82,65 @@ export async function registerMerchantAction(_prev: unknown, formData: FormData)
   return { ok: true };
 }
 
+const profileSchema = z.object({
+  name: z.string().min(2, "Firma adı en az 2 karakter olmalı."),
+  sector: optionalText,
+  description: z.string().trim().max(1000).optional().or(z.literal("")),
+  contactName: optionalText,
+  email: z.string().email("Geçerli bir e-posta gir.").optional().or(z.literal("")),
+  phone: optionalText,
+  taxId: optionalText,
+  city: optionalText,
+  address: z.string().trim().max(500).optional().or(z.literal("")),
+  websiteUrl: optionalUrl,
+  logoUrl: optionalUrl,
+});
+
+/** Satıcının kendi mağaza profilini güncellemesi. */
+export async function updateMerchantProfileAction(_prev: unknown, formData: FormData) {
+  const merchant = await getCurrentMerchant();
+  if (!merchant) return { error: "Mağaza bulunamadı." };
+
+  const parsed = profileSchema.safeParse({
+    name: formData.get("name"),
+    sector: formData.get("sector"),
+    description: formData.get("description"),
+    contactName: formData.get("contactName"),
+    email: formData.get("email"),
+    phone: formData.get("phone"),
+    taxId: formData.get("taxId"),
+    city: formData.get("city"),
+    address: formData.get("address"),
+    websiteUrl: formData.get("websiteUrl"),
+    logoUrl: formData.get("logoUrl"),
+  });
+  if (!parsed.success) {
+    return { error: parsed.error.issues[0]?.message ?? "Geçersiz bilgiler." };
+  }
+
+  const d = parsed.data;
+  await prisma.merchant.update({
+    where: { id: merchant.id },
+    data: {
+      name: d.name,
+      sector: d.sector || null,
+      description: d.description || null,
+      contactName: d.contactName || null,
+      email: d.email || null,
+      phone: d.phone || null,
+      taxId: d.taxId || null,
+      city: d.city || null,
+      address: d.address || null,
+      websiteUrl: d.websiteUrl || null,
+      logoUrl: d.logoUrl || null,
+    },
+  });
+
+  revalidatePath("/satici/profil");
+  revalidatePath(`/magaza/${merchant.slug}`);
+  return { ok: true };
+}
+
 const feedSchema = z.object({
   name: z.string().min(2),
   type: z.enum(["XML", "CSV", "JSON", "GOOGLE_SHOPPING"]),
