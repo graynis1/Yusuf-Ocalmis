@@ -33,7 +33,7 @@ export default async function MerchantDashboard() {
       </div>
 
       {merchant.status === "PENDING" && (
-        <div className="mb-6 rounded-lg border border-amber-400/30 bg-amber-400/10 p-4 text-sm text-amber-300">
+        <div className="mb-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
           Başvurun inceleniyor. Onaylandığında feed bağlayıp ürünlerini listeleyebileceksin.
         </div>
       )}

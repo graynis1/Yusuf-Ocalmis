@@ -29,9 +29,9 @@ export function ProductCard({ p }: { p: ProductCardData }) {
   return (
     <Link
       href={`/urun/${p.slug}`}
-      className="card-hover group flex flex-col overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--card)]"
+      className="group flex flex-col overflow-hidden rounded-lg border border-[var(--border)] bg-card transition-shadow hover:border-[var(--border-strong)] hover:shadow-md"
     >
-      <div className="relative aspect-square overflow-hidden rounded-t-xl bg-white">
+      <div className="relative aspect-square overflow-hidden border-b border-[var(--border)] bg-white">
         <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-105">
           <ProductImage
             src={p.imageUrl}
@@ -42,7 +42,7 @@ export function ProductCard({ p }: { p: ProductCardData }) {
           />
         </div>
         {pct > 0 && (
-          <span className="absolute right-2 top-2 rounded-full bg-[var(--save)] px-2 py-0.5 text-xs font-extrabold text-[#04221a] shadow-glow-save">
+          <span className="absolute right-2 top-2 rounded bg-[var(--save)] px-1.5 py-0.5 text-xs font-bold text-white">
             −%{pct}
           </span>
         )}
@@ -65,7 +65,7 @@ export function ProductCard({ p }: { p: ProductCardData }) {
         <div className="mt-auto pt-1">
           <div className="text-[11px] text-[var(--muted)]">{p.offerCount} satıcı · en ucuz</div>
           <div className="flex items-baseline gap-2">
-            <span className="tabular text-lg font-extrabold text-[var(--save)]">{formatPrice(p.lowestPrice)}</span>
+            <span className="tabular text-lg font-extrabold text-ink">{formatPrice(p.lowestPrice)}</span>
             {pct > 0 && (
               <span className="tabular text-xs text-[var(--muted)] line-through">{formatPrice(p.oldPrice)}</span>
             )}

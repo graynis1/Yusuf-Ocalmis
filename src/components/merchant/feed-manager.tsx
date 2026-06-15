@@ -90,7 +90,7 @@ export function FeedManager({ feeds, canManage }: { feeds: FeedRow[]; canManage:
       </div>
 
       {!canManage && (
-        <div className="rounded-lg border border-amber-400/30 bg-amber-400/10 p-4 text-sm text-amber-300">
+        <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
           Mağazan onaylandıktan sonra feed bağlayabilirsin.
         </div>
       )}
@@ -167,7 +167,7 @@ export function FeedManager({ feeds, canManage }: { feeds: FeedRow[]; canManage:
               value={mapping}
               onChange={(e) => setMapping(e.target.value)}
               rows={10}
-              className="w-full rounded-md border border-[var(--border)] bg-white/5 p-3 font-mono text-xs text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand)]"
+              className="w-full rounded-md border border-[var(--border)] bg-white p-3 font-mono text-xs text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand)]"
             />
             <p className="text-xs text-[var(--muted)]">Feed alanlarını kanonik şemaya eşle. "Feed'i test et" ile ilk kalemleri önizle.</p>
           </div>

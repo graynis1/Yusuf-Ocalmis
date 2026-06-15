@@ -8,14 +8,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default:
-          "bg-gradient-to-r from-[var(--brand)] to-[var(--brand-2)] text-white hover:brightness-110 hover:shadow-glow",
-        save: "bg-[var(--save)] text-[#04221a] hover:brightness-110 hover:shadow-glow-save",
+        default: "bg-[var(--brand)] text-white hover:brightness-95",
+        save: "bg-[var(--save)] text-white hover:brightness-95",
         outline:
-          "border border-[var(--border-strong)] bg-white/5 text-ink hover:bg-white/10 hover:border-[var(--brand)]/50",
-        ghost: "text-ink hover:bg-white/5",
-        subtle: "bg-white/5 text-ink hover:bg-white/10",
-        destructive: "bg-[var(--rise)] text-white hover:brightness-110",
+          "border border-[var(--border-strong)] bg-white text-ink hover:bg-[var(--surface)]",
+        ghost: "text-ink hover:bg-[var(--surface)]",
+        subtle: "bg-[var(--surface)] text-ink hover:bg-[var(--border)]",
+        destructive: "bg-[var(--rise)] text-white hover:brightness-95",
         link: "text-brand underline-offset-4 hover:underline",
       },
       size: {

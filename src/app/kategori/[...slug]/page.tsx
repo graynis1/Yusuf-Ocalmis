@@ -95,7 +95,7 @@ export default async function CategoryPage({
             <Link
               key={s.slug}
               href={`/kategori/${s.slug}`}
-              className="rounded-full border border-[var(--border)] bg-white/5 px-4 py-1.5 text-sm font-medium text-ink transition-colors hover:border-[var(--brand)]/50 hover:bg-white/10 hover:text-[var(--brand)]"
+              className="rounded-full border border-[var(--border)] bg-white px-4 py-1.5 text-sm font-medium text-ink transition-colors hover:border-[var(--brand)] hover:text-[var(--brand)]"
             >
               {s.name}
             </Link>

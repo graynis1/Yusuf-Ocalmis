@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { TrendingDown, ArrowRight, ShieldCheck, Store, LineChart, Tag, Search, Sparkles } from "lucide-react";
+import { TrendingDown, ArrowRight, ShieldCheck, Store, LineChart, Tag } from "lucide-react";
 import {
   getTopDeals,
   getTrendingProducts,
@@ -47,43 +47,13 @@ export default async function HomePage() {
 
   return (
     <div className="bg-[var(--surface)]">
-      {/* Premium neon hero */}
-      <section className="relative overflow-hidden border-b border-[var(--border)]">
-        <div className="neon-grid pointer-events-none absolute inset-0 opacity-40" />
-        <div className="pointer-events-none absolute -left-24 top-0 size-[28rem] rounded-full bg-[var(--brand)]/20 blur-[120px]" />
-        <div className="pointer-events-none absolute -right-20 -top-10 size-[26rem] rounded-full bg-[var(--brand-2)]/20 blur-[120px]" />
-        <div className="container relative flex flex-col items-center py-16 text-center md:py-24">
-          <span className="glass mb-5 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold text-[var(--muted)]">
-            <Sparkles className="size-3.5 text-[var(--brand)]" /> Türkiye'nin akıllı fiyat motoru
-          </span>
-          <h1 className="max-w-3xl font-display text-4xl font-extrabold leading-[1.05] md:text-6xl">
-            Aynı ürün, <span className="text-gradient">en düşük fiyat.</span>
-            <br className="hidden md:block" /> Tek aramada karşında.
-          </h1>
-          <p className="mt-5 max-w-xl text-base text-[var(--muted)] md:text-lg">
-            Yüzlerce mağazayı tarar, fiyat geçmişini çıkarır, en doğru anı söyler.
-            Sen sadece <span className="text-ink">"al"</span>'a bas.
-          </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <Link
-              href="/ara"
-              className="inline-flex h-12 items-center gap-2 rounded-full bg-gradient-to-r from-[var(--brand)] to-[var(--brand-2)] px-7 font-semibold text-white shadow-glow transition-transform hover:scale-[1.03]"
-            >
-              <Search className="size-4" /> Ürün ara
-            </Link>
-            <Link
-              href="/ara?sort=price_asc"
-              className="glass inline-flex h-12 items-center gap-2 rounded-full px-7 font-semibold text-ink transition-colors hover:bg-white/10"
-            >
-              <TrendingDown className="size-4 text-[var(--save)]" /> Günün fırsatları
-            </Link>
-          </div>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-[var(--muted)]">
-            <span className="flex items-center gap-1.5"><Store className="size-4 text-[var(--brand)]" /> 10+ mağaza tek yerde</span>
-            <span className="flex items-center gap-1.5"><LineChart className="size-4 text-[var(--brand)]" /> Fiyat geçmişi grafikleri</span>
-            <span className="flex items-center gap-1.5"><Tag className="size-4 text-[var(--save)]" /> Günlük fırsat takibi</span>
-            <span className="flex items-center gap-1.5"><ShieldCheck className="size-4 text-[var(--brand)]" /> Tarafsız karşılaştırma</span>
-          </div>
+      {/* Kompakt değer şeridi */}
+      <section className="border-b border-[var(--border)] bg-white">
+        <div className="container flex flex-wrap items-center justify-center gap-x-8 gap-y-2 py-3 text-sm text-[var(--muted)]">
+          <span className="flex items-center gap-1.5"><Store className="size-4 text-[var(--brand)]" /> 10+ mağaza tek yerde</span>
+          <span className="flex items-center gap-1.5"><LineChart className="size-4 text-[var(--brand)]" /> Fiyat geçmişi grafikleri</span>
+          <span className="flex items-center gap-1.5"><Tag className="size-4 text-[var(--save)]" /> Günlük fırsat takibi</span>
+          <span className="flex items-center gap-1.5"><ShieldCheck className="size-4 text-[var(--brand)]" /> Tarafsız karşılaştırma</span>
         </div>
       </section>
 
@@ -97,7 +67,7 @@ export default async function HomePage() {
               <Link
                 key={c.slug}
                 href={`/kategori/${c.slug}`}
-                className="card-hover group flex flex-col items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--card)] p-3 text-center"
+                className="group flex flex-col items-center gap-2 rounded-lg border border-[var(--border)] bg-card p-3 text-center transition-shadow hover:border-[var(--border-strong)] hover:shadow-sm"
               >
                 <div className="relative size-14 overflow-hidden rounded-full ring-1 ring-[var(--border)]">
                   <ProductImage src={null} alt={c.name} categorySlug={c.slug} sizes="56px" />
@@ -126,7 +96,7 @@ export default async function HomePage() {
               <Link
                 key={b.slug}
                 href={`/marka/${b.slug}`}
-                className="rounded-full border border-[var(--border)] bg-white/5 px-4 py-2 text-sm font-medium text-ink transition-colors hover:border-[var(--brand)]/50 hover:bg-white/10 hover:text-[var(--brand)]"
+                className="rounded-full border border-[var(--border)] bg-white px-4 py-2 text-sm font-medium text-ink transition-colors hover:border-[var(--brand)] hover:text-[var(--brand)]"
               >
                 {b.name}
               </Link>

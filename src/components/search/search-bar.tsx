@@ -106,7 +106,7 @@ export function SearchBar({ className }: { className?: string }) {
           onKeyDown={onKeyDown}
           placeholder="Ürün, marka veya kategori ara…"
           aria-label="Ara"
-          className="h-11 w-full rounded-full border border-[var(--border)] bg-white/5 pl-10 pr-10 text-sm text-ink placeholder:text-[var(--muted)] transition-colors focus-visible:outline-none focus-visible:border-[var(--brand)]/50 focus-visible:ring-2 focus-visible:ring-[var(--brand)]/40 focus-visible:bg-white/[0.07]"
+          className="h-11 w-full rounded-md border border-[var(--border-strong)] bg-white pl-10 pr-10 text-sm text-ink placeholder:text-[var(--muted)] transition-colors focus-visible:outline-none focus-visible:border-[var(--brand)] focus-visible:ring-2 focus-visible:ring-[var(--brand)]/30"
         />
         {loading && (
           <Loader2 className="absolute right-3 top-1/2 size-4 -translate-y-1/2 animate-spin text-[var(--muted)]" />
@@ -114,7 +114,7 @@ export function SearchBar({ className }: { className?: string }) {
       </div>
 
       {open && items.length > 0 && (
-        <ul className="glass absolute z-50 mt-2 w-full animate-fade-up overflow-hidden rounded-xl shadow-2xl">
+        <ul className="absolute z-50 mt-2 w-full animate-fade-up overflow-hidden rounded-md border border-[var(--border)] bg-white shadow-lg">
           {items.map((s, i) => {
             const Icon = iconFor[s.type];
             return (
@@ -124,7 +124,7 @@ export function SearchBar({ className }: { className?: string }) {
                   onClick={() => setOpen(false)}
                   className={cn(
                     "flex items-center gap-3 px-4 py-2.5 text-sm transition-colors",
-                    active === i ? "bg-white/10" : "hover:bg-white/5"
+                    active === i ? "bg-[var(--surface)]" : "hover:bg-[var(--surface)]"
                   )}
                 >
                   <Icon className="size-4 text-[var(--muted)]" />
